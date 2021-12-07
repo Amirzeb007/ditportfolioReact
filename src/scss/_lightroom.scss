@@ -1,0 +1,35 @@
+#lightRoom{
+    background-color: rgba(51, 51, 51, 0.5);
+}
+
+#lightRoom .modal-dialog{
+    width: 100%;
+    max-width: 100%;
+}
+
+#lightRoom .modal-content{
+    background-color: transparent !important;
+    border: 0;
+}
+
+#lightRoom .modal-header{
+    border: 0;
+}
+
+#lightRoom .modal-header span{
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    position: fixed;
+    top: 1rem;
+    right: 2rem;
+}
+
+.lightroom_img{
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    cursor: none;
+}

@@ -1,0 +1,27 @@
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------- BANNER ------------------------------ */
+/* ----------------------------------------------------------------------- */
+
+.banner{
+    padding-top: 12rem;
+    padding-bottom: 6rem;
+}
+
+.banner .banner_hd{
+    font-size: clamp(1.65rem,3.5vw,4.5rem);
+}
+
+.banner .caps{
+    font-size: clamp(1rem,2vw,1.5rem);
+    padding-top: 0.74em;
+    padding-bottom: 0.8em;
+}
+
+.banner .banner_hd span{
+    font-weight: 600;
+}
+
+.banner .banner_img img{
+    width: 100%;
+    max-width: 645px;
+}
