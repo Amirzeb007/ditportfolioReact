@@ -1,7 +1,6 @@
 import React from 'react';
 import { sitelogo } from '../../assets/img';
 import { Link } from 'react-router-dom';
-import MyDropDownMenu from './dropdown-menu';
 import MyLogo from '../site-logo';
 
 class Header extends React.Component {
@@ -23,10 +22,10 @@ class Header extends React.Component {
                             alt="DIT Logo"
                             imgclass="img-fluid"
                         />
-                        <a className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        <span className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                             <span className="fa fa-bars"></span>
-                        </a>
+                        </span>
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item">
