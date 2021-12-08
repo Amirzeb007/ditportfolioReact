@@ -97,7 +97,7 @@ class Header extends React.Component {
                 <nav className="navbar navbar-expand-lg">
                     <div className="container">
                         <MyLogo
-                            link="/"
+                            link="/#"
                             myclass="Navbar-brand"
                             img={sitelogo}
                             alt="DIT Logo"
@@ -110,104 +110,104 @@ class Header extends React.Component {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item dropdown">
-                                    <Link className="nav-link" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">Services</Link>
+                                    <a className="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">Services</a>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
 
                                         <li className="dropend">
-                                            <Link className="nav-link dropdown-toggle" to="/" id="" role="button" data-bs-toggle="dropdown"
+                                            <a className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Custom Apps
-                                            </Link>
+                                            </a>
                                             <MyDropDownMenu dropItem={dropItem1} dropClass={"dropdown-item"} />
                                         </li>
 
                                         <li className="dropend">
-                                            <Link className="nav-link dropdown-toggle" to="/" id="" role="button" data-bs-toggle="dropdown"
+                                            <a className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 UI/UX
-                                            </Link>
+                                            </a>
                                             <MyDropDownMenu dropItem={dropItem2} dropClass={"dropdown-item"} />
                                         </li>
 
                                         <li className="dropend">
-                                            <Link className="nav-link dropdown-toggle" to="/" id="" role="button" data-bs-toggle="dropdown"
+                                            <a className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Digital Marketing
-                                            </Link>
+                                            </a>
                                             <MyDropDownMenu dropItem={dropItem3} dropClass={"dropdown-item"} />
                                         </li>
 
                                         <li className="dropend">
-                                            <Link className="nav-link dropdown-toggle" to="/" id="" role="button" data-bs-toggle="dropdown"
+                                            <a className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Cyber Security
-                                            </Link>
+                                            </a>
                                             <MyDropDownMenu dropItem={dropItem4} dropClass={"dropdown-item"} />
                                         </li>
 
                                         <li className="dropend">
-                                            <Link className="nav-link dropdown-toggle" to="/" id="" role="button" data-bs-toggle="dropdown"
+                                            <a className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Testing
-                                            </Link>
+                                            </a>
                                             <MyDropDownMenu dropItem={dropItem5} dropClass={"dropdown-item"} />
                                         </li>
                                     </ul>
                                 </li>
 
                                 <li className="nav-item dropdown">
-                                    <Link className="nav-link" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    <a className="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         Technology
-                                    </Link>
+                                    </a>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
 
                                         <li className="dropend">
-                                            <Link className="nav-link dropdown-toggle" to="/" id="" role="button" data-bs-toggle="dropdown"
+                                            <a className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 App Development
-                                            </Link>
+                                            </a>
                                             <MyDropDownMenu dropItem={dropItem6} dropClass={"dropdown-item"} />
                                         </li>
 
                                         <li className="dropend">
-                                            <Link className="nav-link dropdown-toggle" to="/" id="" role="button" data-bs-toggle="dropdown"
+                                            <a className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Web Development
-                                            </Link>
+                                            </a>
                                             <MyDropDownMenu dropItem={dropItem7} dropClass={"dropdown-item"} />
                                         </li>
 
                                         <li className="dropend">
-                                            <Link className="nav-link dropdown-toggle" to="/" id="" role="button" data-bs-toggle="dropdown"
+                                            <a className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Frontend
-                                            </Link>
+                                            </a>
                                             <MyDropDownMenu dropItem={dropItem8} dropClass={"dropdown-item"} />
                                         </li>
 
                                         <li className="dropend">
-                                            <Link className="nav-link dropdown-toggle" to="/" id="" role="button" data-bs-toggle="dropdown"
+                                            <a className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 ECM
-                                            </Link>
+                                            </a>
                                             <MyDropDownMenu dropItem={dropItem9} dropClass={"dropdown-item"} />
                                         </li>
 
                                         <li className="dropend">
-                                            <Link className="nav-link dropdown-toggle" to="/" id="" role="button" data-bs-toggle="dropdown"
+                                            <a className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Cloud
-                                            </Link>
+                                            </a>
                                             <MyDropDownMenu dropItem={dropItem10} dropClass={"dropdown-item"} />
                                         </li>
 
                                         <li className="dropend">
-                                            <Link className="nav-link dropdown-toggle" to="/" id="" role="button" data-bs-toggle="dropdown"
+                                            <a className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Other Services
-                                            </Link>
+                                            </a>
                                             <MyDropDownMenu dropItem={dropItem11} dropClass={"dropdown-item"} />
                                         </li>
 
@@ -215,10 +215,10 @@ class Header extends React.Component {
                                 </li>
 
                                 <li className="nav-item dropdown">
-                                    <Link className="nav-link " to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    <a className="nav-link " id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         Insights
-                                    </Link>
+                                    </a>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                                         <li><Link className="dropdown-item insight-first" to="/">Latest Blogs</Link></li>
                                         <li><Link className="dropdown-item" to="/">Infographic</Link></li>
