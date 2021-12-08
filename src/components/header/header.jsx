@@ -17,7 +17,7 @@ class Header extends React.Component {
                 <nav className="navbar navbar-expand-lg">
                     <div className="container">
                         <MyLogo
-                            link="/"
+                            link="/#"
                             myclass="Navbar-brand"
                             img={sitelogo}
                             alt="DIT Logo"
@@ -39,7 +39,7 @@ class Header extends React.Component {
                                     <Link className="nav-link" to="/insights">Insights</Link>
                                 </li>
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/about-us">About</Link>
+                                    <Link className="nav-link" to="/about">About</Link>
                                 </li>
                                 <li className="nav-item">
                                     <Link className="nav-link" to="/portfolio">Portfolio</Link>

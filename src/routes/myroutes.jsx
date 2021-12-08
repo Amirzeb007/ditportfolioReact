@@ -21,7 +21,7 @@ function MyRoutes() {
                 <Route exact path="/services" element={<ServicesPage />} />
                 <Route exact path="/technology" element={<TechnologiesPage />} />
                 <Route exact path="/insights" element={<InsightsPage />} />
-                <Route exact path="/about-us" element={<AboutUs />} />
+                <Route exact path="/about" element={<AboutUs />} />
                 <Route exact path="/portfolio" element={<Portfolio />} />
                 <Route exact path="/career" element={<CareerPage />} />
                 <Route exact path="/contact-us" element={<ContactUsPage />} />
