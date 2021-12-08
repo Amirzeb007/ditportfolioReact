@@ -110,12 +110,12 @@ class Header extends React.Component {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item dropdown">
-                                    <button className="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    <button className="nav-link" id="navbarDropdown" data-bs-toggle="dropdown"
                                         aria-expanded="false">Services</button>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
 
                                         <li className="dropend">
-                                            <button className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
+                                            <button className="nav-link dropdown-toggle" id="" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Custom Apps
                                             </button>
@@ -123,7 +123,7 @@ class Header extends React.Component {
                                         </li>
 
                                         <li className="dropend">
-                                            <button className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
+                                            <button className="nav-link dropdown-toggle" id="" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 UI/UX
                                             </button>
@@ -131,7 +131,7 @@ class Header extends React.Component {
                                         </li>
 
                                         <li className="dropend">
-                                            <button className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
+                                            <button className="nav-link dropdown-toggle" id="" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Digital Marketing
                                             </button>
@@ -139,7 +139,7 @@ class Header extends React.Component {
                                         </li>
 
                                         <li className="dropend">
-                                            <button className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
+                                            <button className="nav-link dropdown-toggle" id="" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Cyber Security
                                             </button>
@@ -147,7 +147,7 @@ class Header extends React.Component {
                                         </li>
 
                                         <li className="dropend">
-                                            <button className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
+                                            <button className="nav-link dropdown-toggle" id="" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Testing
                                             </button>
@@ -157,14 +157,14 @@ class Header extends React.Component {
                                 </li>
 
                                 <li className="nav-item dropdown">
-                                    <button className="nav-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    <button className="nav-link" id="navbarDropdown" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         Technology
                                     </button>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
 
                                         <li className="dropend">
-                                            <button className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
+                                            <button className="nav-link dropdown-toggle" id="" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 App Development
                                             </button>
@@ -172,7 +172,7 @@ class Header extends React.Component {
                                         </li>
 
                                         <li className="dropend">
-                                            <button className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
+                                            <button className="nav-link dropdown-toggle" id="" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Web Development
                                             </button>
@@ -180,7 +180,7 @@ class Header extends React.Component {
                                         </li>
 
                                         <li className="dropend">
-                                            <button className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
+                                            <button className="nav-link dropdown-toggle" id="" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Frontend
                                             </button>
@@ -188,7 +188,7 @@ class Header extends React.Component {
                                         </li>
 
                                         <li className="dropend">
-                                            <button className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
+                                            <button className="nav-link dropdown-toggle" id="" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 ECM
                                             </button>
@@ -196,7 +196,7 @@ class Header extends React.Component {
                                         </li>
 
                                         <li className="dropend">
-                                            <button className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
+                                            <button className="nav-link dropdown-toggle" id="" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Cloud
                                             </button>
@@ -204,7 +204,7 @@ class Header extends React.Component {
                                         </li>
 
                                         <li className="dropend">
-                                            <button className="nav-link dropdown-toggle" id="" role="button" data-bs-toggle="dropdown"
+                                            <button className="nav-link dropdown-toggle" id="" data-bs-toggle="dropdown"
                                                 aria-expanded="false">
                                                 Other Services
                                             </button>
@@ -215,7 +215,7 @@ class Header extends React.Component {
                                 </li>
 
                                 <li className="nav-item dropdown">
-                                    <button className="nav-link " id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    <button className="nav-link " id="navbarDropdown" data-bs-toggle="dropdown"
                                         aria-expanded="false">
                                         Insights
                                     </button>
