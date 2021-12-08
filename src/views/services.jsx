@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { Component } from 'react';
 import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
+import ComingSoon from '../components/coming-soon';
 
-function OurServices() {
-    return (
-        <div>
-            <Header />
-            <div className="text-center">
-                Services
+class ServicesPage extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {}
+    }
+    render() {
+        return (
+            <div>
+                <Header />
+                <ComingSoon />
+                <Footer />
             </div>
-            <Footer />
-        </div>
-    );
+        );
+    }
 }
 
-export default OurServices;
+export default ServicesPage;

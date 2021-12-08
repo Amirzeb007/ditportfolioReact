@@ -3,7 +3,7 @@ import ComingSoon from '../components/coming-soon';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 
-class AboutUs extends Component {
+class CareerPage extends Component {
     constructor(props) {
         super(props);
         this.state = {}
@@ -19,4 +19,4 @@ class AboutUs extends Component {
     }
 }
 
-export default AboutUs;
+export default CareerPage;
