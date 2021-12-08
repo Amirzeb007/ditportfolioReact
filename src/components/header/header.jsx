@@ -110,7 +110,7 @@ class Header extends React.Component {
                         <div className="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul className="navbar-nav ms-auto">
                                 <li className="nav-item dropdown">
-                                    <Link className="nav-link" to="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                    <Link className="nav-link" to="/" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                         aria-expanded="false">Services</Link>
                                     <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
 
@@ -230,7 +230,7 @@ class Header extends React.Component {
                                 </li>
 
                                 <li className="nav-item">
-                                    <Link className="nav-link" to="/about-us">About</Link>
+                                    <Link className="nav-link" to="/">About</Link>
                                 </li>
 
                                 <li className="nav-item">
