@@ -1,6 +1,6 @@
 import React from 'react';
 
-function MyLightroom() {
+function MyLightroom(props) {
     return (
         <div className="modal fade" id="lightRoom" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div className="modal-dialog modal-dialog-centered">
@@ -10,7 +10,7 @@ function MyLightroom() {
                     </div>
                     <div className="modal-body">
                         <div className="img_wrapper">
-                            {/* <img src={this.props.url} className="lightroom_img img-fluid" alt=""/> */}
+                            <img src={props.url} className="lightroom_img  img-fluid" alt="" />
                         </div>
                     </div>
                 </div>

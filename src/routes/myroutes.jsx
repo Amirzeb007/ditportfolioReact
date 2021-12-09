@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import {
     BrowserRouter,
     Routes,
@@ -12,6 +12,8 @@ import ServicesPage from '../views/services';
 import InsightsPage from '../views/insights';
 import CareerPage from '../views/career';
 import ContactUsPage from '../views/contact-us';
+import NotFound from '../views/not-found';
+import MobileAppPage from '../views/mobile-dev';
 
 function MyRoutes() {
     return (
@@ -19,12 +21,17 @@ function MyRoutes() {
             <Routes>
                 <Route exact path="/" element={<Home />} />
                 <Route exact path="/services" element={<ServicesPage />} />
+                <Fragment>
+                    <Route exact path="/services/mobile-app-development" element={<MobileAppPage />} />
+                </Fragment>
                 <Route exact path="/technology" element={<TechnologiesPage />} />
                 <Route exact path="/insights" element={<InsightsPage />} />
                 <Route exact path="/about" element={<AboutUs />} />
                 <Route exact path="/portfolio" element={<Portfolio />} />
                 <Route exact path="/career" element={<CareerPage />} />
                 <Route exact path="/contact-us" element={<ContactUsPage />} />
+                <Route exact path="/contact-us" element={<ContactUsPage />} />
+                <Route exact path="*" element={<NotFound />} />
             </Routes>
         </BrowserRouter>
     );

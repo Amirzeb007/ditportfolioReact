@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
+import MyLightroom from '../custom_lightroom/lightroom';
 
 function PortfolioSec(props) {
+
+    const [url, seturl] = useState(null);
+
+    const OpenLightRoom = (item, i) => {
+        return (
+            seturl(item)
+        );
+    }
+
     return (
-        <section className={"portfolio_sec sec_pad " + props.extraPad}>
+        <section className={props.extraClass ? 'portfolio_sec sec_pad top_padd' : 'portfolio_sec sec_pad'}>
             <div className="container">
                 <div className="row mb-5">
                     <div className="col-lg-12">
@@ -48,7 +58,7 @@ function PortfolioSec(props) {
                                                     <div key={i} className="portfolio_cards">
                                                         <div className="img_wrapper">
                                                             <div className="wrap open_lightroom" data-bs-toggle="modal" data-bs-target="#lightRoom">
-                                                                <img src={item.img} alt="" className="img-fluid" />
+                                                                <img src={item.img} alt="" onClick={() => OpenLightRoom(item.img, i)} className="img-fluid" />
                                                             </div>
                                                             <span>{item.span}</span>
                                                         </div>
@@ -59,7 +69,7 @@ function PortfolioSec(props) {
                                     </div>
                                     {props.portfolioViewBtn && props.portfolioViewBtn}
                                 </div>
-                                <div className="tab-pane fade" id="website" role="tabpanel" aria-labelledby="pills-website">
+                                {/* <div className="tab-pane fade" id="website" role="tabpanel" aria-labelledby="pills-website">
                                     <div className="flex_box">
                                         {
                                             props.portfolioCards.map((item, i) => {
@@ -130,12 +140,15 @@ function PortfolioSec(props) {
                                             })
                                         }
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <MyLightroom
+                url={url}
+            />
         </section>
     );
 }

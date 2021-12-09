@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Footer from '../components/footer/footer';
 import Header from '../components/header/header';
 import PortfolioSec from '../components/portfolio_sec/portfolio_sec';
@@ -68,13 +68,18 @@ class Portfolio extends React.Component {
             ],
         }
     }
+
+    componentDidMount() {
+        document.title = "Porfolio | DiscoverItech"
+    }
+
     render() {
         const ViewMore_btn = <Link to="/" className="common_btn btn_hover txt_white bg_red mx-auto mt-5 view_more">View More</Link>;
         return (
-            <div>
+            <Fragment>
                 <Header />
                 <PortfolioSec
-                    extraPad={"top_padd"}
+                    extraClass={"top_padd"}
                     portfolioSechd="Portfolio"
                     portfolioSechdSpan="Checkout the work we've done for our other clients. Our portfolio includes case studies for work done for"
                     portfolioCards={this.state.allWork}
@@ -86,7 +91,7 @@ class Portfolio extends React.Component {
                     tab5="Social Media"
                 />
                 <Footer />
-            </div>
+            </Fragment>
         );
     }
 }

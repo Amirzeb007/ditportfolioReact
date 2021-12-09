@@ -77,6 +77,10 @@ body{
     color: var(--black) !important;
 }
 
+.gradient{
+    background: var(--gradient-red);
+}
+
 .common_btn{
     display: block;
     font-weight: 500;
@@ -94,4 +98,4 @@ body{
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -15px;
 }
 
-@import 'mixins','header','footer','banner','lightroom','content','responsive','comingSoon';
+@import 'mixins','header','footer','banner','lightroom','content','responsive','comingSoon','notFound';

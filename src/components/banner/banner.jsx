@@ -8,7 +8,9 @@ function Banner(props) {
                     <div className="col-lg-6 col-md-6 col-sm-12 align-self-center">
                         <div className="banner_cap">
                             <div className="banner_hd">
-                                {props.bannerHd}<span className="txt_red">{props.bannerHdSpan}</span>
+                                {props.bannerHd}{props.bannerhdSpan &&
+                                    <span className="txt_red">{props.bannerhdSpan}</span>
+                                }
                             </div>
                             <div className="caps">
                                 {props.bannerCaps}

@@ -1,11 +1,10 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Header from '../components/header/header';
 import Footer from '../components/footer/footer';
 import { Link } from 'react-router-dom';
 import Banner from '../components/banner/banner';
 import OurServicesSec from '../components/services_sec/our_services_sec';
 import AboutSec from '../components/about_sec/about_sec';
-import MyLightroom from '../components/custom_lightroom/lightroom';
 import PortfolioSec from '../components/portfolio_sec/portfolio_sec';
 import ContactFormSec from '../components/contact_form_sec/contact_form';
 import OurClient from '../components/our-clients/our-client-sec';
@@ -33,6 +32,7 @@ import {
     qoute_icon,
     test_art
 } from '../assets/img';
+import { Component } from 'react';
 
 class Home extends React.Component {
     constructor(props) {
@@ -130,15 +130,19 @@ class Home extends React.Component {
             ]
         }
     }
+    componentDidMount() {
+        document.title = "Home | DiscoverItech"
+    }
+
     render() {
-        const contactUS_btn = <Link to="/" className="common_btn btn_hover txt_white bg_red">Contact Us</Link>;
+        const contactUS_btn = <Link to="/contact-us" className="common_btn btn_hover txt_white bg_red">Contact Us</Link>;
         const learnMore_btn = <Link to="/" className="txt_white common_btn bg_red btn_hover">Learn More</Link>;
         const ViewMore_btn = <Link to="/" className="common_btn btn_hover txt_white bg_red mx-auto mt-5 view_more">View More</Link>;
         const bannerImg = homeBanner;
         const testiCaroClassess = "owl-theme testi_slider";
         const clientCaroClassess = "owl-theme clients_slider";
         return (
-            <div>
+            <Fragment>
                 <Header />
                 <Banner
                     bannerImg={bannerImg}
@@ -159,7 +163,6 @@ class Home extends React.Component {
                     Colpara="At Discover-I-Tech we are a complete digital marketing agency offering design, development and internet marketing services to all the businesses.We build your complete presence with Website and mobile app design, CRM Integrations, email setup, Search engine optimization, and complete digital marketing services.<br /><br />Create and improve your marketing potential (products, services).Provide access to unique technologies, as well as the knowledge and experience to build a successful business on the Internet.Show you clear, measurable results and regular work on the development of your business on the Internet."
                     ColBtn={learnMore_btn}
                 />
-                <MyLightroom />
                 <PortfolioSec
                     portfolioSechd="Portfolio"
                     portfolioSechdSpan="Checkout the work we've done for our other clients. Our portfolio includes case studies for work done for"
@@ -192,7 +195,7 @@ class Home extends React.Component {
                     sechdSpan="Let Us Turn Your Ideas Into Reality."
                 />
                 <Footer />
-            </div>
+            </Fragment>
         );
     }
 }

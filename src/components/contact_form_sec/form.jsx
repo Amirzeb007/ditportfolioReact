@@ -1,10 +1,12 @@
 import React from 'react';
 
-function MyContactForm() {
+function MyContactForm(props) {
     return (
         <div className="contact_form_wrapper">
             <form action="">
-                <h5>Say Hi</h5>
+                {props.hd &&
+                    <h5>{props.hd}</h5>
+                }
                 <div className="input_wrapper">
                     <input type="text" name="" id="" placeholder="Full Name" />
                 </div>

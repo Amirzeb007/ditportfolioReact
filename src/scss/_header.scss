@@ -118,18 +118,18 @@ header {
 // Hover # active # open classess effect
 header {
     nav {
-        .nav-item {  
-            .droplist[data-dropdown=first]{
-                &.open{
-                    display: block;
-                }    
-            }
-            .droplist[data-dropdown=second]{
-                &.open{
-                    display: block;
-                }
-            }             
-        }
+        // .nav-item {  
+        //     .droplist[data-dropdown=first]{
+        //         &.open{
+        //             display: block;
+        //         }    
+        //     }
+        //     .droplist[data-dropdown=second]{
+        //         &.open{
+        //             display: block;
+        //         }
+        //     }             
+        // }
         .nav-item:hover{
             .droplist[data-dropdown=first]{
                 display: block;

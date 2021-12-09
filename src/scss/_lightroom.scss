@@ -1,5 +1,5 @@
 #lightRoom{
-    background-color: rgba(51, 51, 51, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 #lightRoom .modal-dialog{
@@ -10,6 +10,31 @@
 #lightRoom .modal-content{
     background-color: transparent !important;
     border: 0;
+}
+
+#lightRoom .modal-body::before{
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    left: 50%;
+    width: 200px;
+    height: 80px;
+    background-color:rgb(255, 255, 255);
+    z-index: -1;
+    transform:  translateX(-50%) perspective(5rem) rotateX(135deg);
+    filter: blur(30px);
+}
+#lightRoom .modal-body::after{
+    content: '';
+    position: absolute;
+    top: -200px;
+    left: 50%;
+    width: 200px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    transform: translateX(-50%) perspective(5rem) rotateX(45deg);
+    filter: blur(30px);
 }
 
 #lightRoom .modal-header{
@@ -32,4 +57,8 @@
     max-width: 800px;
     margin: 0 auto;
     cursor: none;
+}
+
+.modal-dialog {
+    margin: 0 !important;
 }

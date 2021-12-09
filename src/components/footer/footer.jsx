@@ -98,7 +98,7 @@ function Footer() {
             txt: 'Partners'
         },
         {
-            link: '/',
+            link: '/portfolio',
             txt: 'Portfolio'
         },
         {
@@ -106,7 +106,7 @@ function Footer() {
             txt: 'Blog'
         },
         {
-            link: '/',
+            link: '/contact-us',
             txt: 'Contact Us'
         },
     ]

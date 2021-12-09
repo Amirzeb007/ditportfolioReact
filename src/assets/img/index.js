@@ -29,6 +29,13 @@ import universal_logo from './logos/logo-universal-basemant.png';
 import test_art from './section_images/testimonials-art.png';
 import qoute_icon from './icons/icon-quote.png'; 
 import person_img from './personImg/person-img.png';
+import mobile_dev_banner from './banners/mobile-dev-banner.png';
+import mobile_mock1 from './section_images/mobile-mock1.png';
+import mobile_mock2 from './section_images/mobile-mock2.png';
+import xamarian_logo from './section_images/xamarian-logo.png';
+import html5_img from './section_images/html5.png';
+import slight_red_curve_top from './backgrounds/slight-curve-top.png';
+import slight_red_curve_bottom from './backgrounds/slight-curve-bottom.png';
 
 export{
     sitelogo,
@@ -61,5 +68,12 @@ export{
     universal_logo,
     test_art,
     qoute_icon,
-    person_img
+    person_img,
+    mobile_dev_banner,
+    mobile_mock1,
+    mobile_mock2,
+    xamarian_logo,
+    html5_img,
+    slight_red_curve_top,
+    slight_red_curve_bottom,
 };

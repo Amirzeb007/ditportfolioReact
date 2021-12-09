@@ -16,8 +16,8 @@ class Header extends React.Component {
                         {
                             url: '/', txt: 'Custom Apps',
                             dropdown2: [
-                                { url: '/', txt: 'Mobile App Development' },
-                                { url: '/', txt: 'Web Dev Services' },
+                                { url: '/services/mobile-app-development', txt: 'Mobile App Development' },
+                                { url: '/', txt: 'Web Devevelopment' },
                                 { url: '/', txt: 'WordPress Development' },
                                 { url: '/', txt: 'Responsive Web Design' },
                                 { url: '/', txt: 'Blockchain Development' },

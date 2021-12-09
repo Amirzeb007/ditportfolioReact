@@ -92,6 +92,9 @@
     //     margin-left: 1rem;
     //     max-width: 165px;
     // }
+    .top_padd {
+        padding-top: 10em !important;
+    }
     .secvices_cards .img-wrapper {
         height: 175px;
         line-height: 175px;
@@ -301,6 +304,9 @@
     .our_services_sec .secvices_cards img {
         max-width: 235px;
     }
+    .top_padd {
+        padding-top: 9em !important;
+    }
 }
 
 /* ----------------------------------------------------------------------- */
@@ -308,6 +314,9 @@
 /* ----------------------------------------------------------------------- */
 
 @media (max-width: 767px){
+    .top_padd {
+        padding-top: 7em !important;
+    }
     footer .info_ul {
         margin-bottom: 2.5rem;
     }

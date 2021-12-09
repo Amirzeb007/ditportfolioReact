@@ -8,7 +8,7 @@ import MyContactForm from './form';
 
 function ContactFormSec(props) {
     return (
-        <section className="contact_sec sec_pad">
+        <section className={props.extraClass ? 'contact_sec sec_pad top_padd' : 'contact_sec sec_pad'}>
             <div className="container">
                 <div className="row mb-5">
                     <div className="col-lg-12">
@@ -66,11 +66,13 @@ function ContactFormSec(props) {
                         </div>
                     </div>
                     <div className="col-lg-8 col-md-12 col-sm-12">
-                        <MyContactForm />
+                        <MyContactForm
+                            hd="Say Hi"
+                        />
                     </div>
                 </div>
             </div>
-        </section>
+        </section >
     );
 }
 
