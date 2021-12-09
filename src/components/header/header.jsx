@@ -158,7 +158,7 @@ class Header extends React.Component {
                     <div className="container">
                         <MyLogo
                             link="/#"
-                            myclass="Navbar-brand"
+                            myclass="navbar-brand"
                             img={sitelogo}
                             alt="DIT Logo"
                             imgclass="img-fluid"
