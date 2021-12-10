@@ -64,11 +64,9 @@ header {
                         z-index: 6;
                         border-radius: $listItemr;
                         box-shadow: 0 0 10px rgb(175, 175, 175);
-                        &.open{
-                            display: block;
-                        }
                         a{
                             font-weight: 500;
+                            cursor: default;
                         }
                     }                    
                 }

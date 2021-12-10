@@ -1,3 +1,11 @@
 @mixin Fade($x) {
     transition: $x all ease-in-out;
 }
+@mixin Flex($x,$y,$z,$a,$b,$k) {
+    display: flex;
+    flex-direction: $x;
+    justify-content: $y;
+    align-items: $z;
+    gap: $a $b;
+    flex-wrap: $k;
+}

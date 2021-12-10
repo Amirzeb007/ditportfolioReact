@@ -36,6 +36,16 @@ import xamarian_logo from './section_images/xamarian-logo.png';
 import html5_img from './section_images/html5.png';
 import slight_red_curve_top from './backgrounds/slight-curve-top.png';
 import slight_red_curve_bottom from './backgrounds/slight-curve-bottom.png';
+import web_dev_banner from './banners/web-developer-banner.png';
+import skew_person from './icons/skew-persion.png';
+import skew_tags from './icons/skew-tags.png';
+import skew_setting from './icons/skew-setting.png';
+import skew_circle from './icons/skew-circle.png';
+import skew_scope from './icons/skew-scope.png';
+import icon_tags from './icons/icon-tags.png';
+import icon_responsive from './icons/icon-responsive.png';
+import icon_api from './icons/icon-api.png';
+import icon_levels from './icons/icon-levels.png';
 
 export{
     sitelogo,
@@ -76,4 +86,14 @@ export{
     html5_img,
     slight_red_curve_top,
     slight_red_curve_bottom,
+    web_dev_banner,
+    skew_circle,
+    skew_person,
+    skew_tags,
+    skew_setting,
+    skew_scope,
+    icon_tags,
+    icon_responsive,
+    icon_api,
+    icon_levels,
 };

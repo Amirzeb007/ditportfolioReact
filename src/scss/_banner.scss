@@ -12,7 +12,7 @@
 }
 
 .banner .caps{
-    font-size: clamp(1rem,2vw,1.5rem);
+    font-size: clamp(0.95rem,2vw,1.4rem);
     padding-top: 0.74em;
     padding-bottom: 0.8em;
 }
@@ -23,5 +23,5 @@
 
 .banner .banner_img img{
     width: 100%;
-    max-width: 645px;
+    max-width: 500px;
 }

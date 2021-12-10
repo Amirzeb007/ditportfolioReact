@@ -44,7 +44,7 @@ class MobileAppPage extends React.Component {
                     img={mobile_mock2}
                     conBtn={contactUS_btn}
                     extraClasscol1="col-lg-6 col-md-12"
-                    extraClasscol2="align-self-baseline col-lg-6 col-md-12"
+                    extraClasscol2="align-self-baseline bkg col-lg-6 col-md-12"
                     secClass="bg_top"
                 />
                 <SectionOne
@@ -55,7 +55,7 @@ class MobileAppPage extends React.Component {
                     conBtn={contactUS_btn}
                     extraClasscol1="align-self-center col-lg-4 col-md-5 order-1"
                     extraClasscol2="align-self-center col-lg-8 col-md-7"
-                    secClass=""
+                    secClass="small_img"
                 />
                 <SectionOne
                     colhd="iOS App"
@@ -64,7 +64,7 @@ class MobileAppPage extends React.Component {
                     img={mobile_mock1}
                     conBtn={contactUS_btn}
                     extraClasscol1="col-lg-6 col-md-12"
-                    extraClasscol2="align-self-end col-lg-6 col-md-12"
+                    extraClasscol2="align-self-end col-lg-6 col-md-12 bkg2"
                     secClass="bg_bottom"
                 />
                 <SectionOne
@@ -75,7 +75,7 @@ class MobileAppPage extends React.Component {
                     conBtn={contactUS_btn_white}
                     extraClasscol1="align-self-center col-lg-4 col-md-5 order-1"
                     extraClasscol2="align-self-center col-lg-8 col-md-7"
-                    secClass="gradient"
+                    secClass="gradient small_img"
                 />
                 <section className="dev_services sec_pad">
                     <div className="container">
@@ -84,9 +84,7 @@ class MobileAppPage extends React.Component {
                                 <h4 className="sec_hd mb-5">
                                     How Can We Help You?
                                 </h4>
-                                <MyContactForm
-                                    hd="Say Hi"
-                                />
+                                <MyContactForm />
                             </div>
                         </div>
                     </div>
@@ -100,7 +98,7 @@ class MobileAppPage extends React.Component {
 
 function SectionOne(props) {
     return (
-        <section className={props.secClass ? props.secClass + ' ' + 'dev_services sec_pad' : 'dev_services sec_pad'}>
+        <section className={props.secClass ? props.secClass + ' dev_services sec_pad' : 'dev_services sec_pad'}>
             <div className="container">
                 <div className="row">
                     <div className={props.extraClasscol1 ? props.extraClasscol1 : ''}>
@@ -127,34 +125,3 @@ function SectionOne(props) {
 }
 
 export default MobileAppPage;
-
-
-
-// function SectionTwo(props) {
-//     return (
-//         <section className={props.secClass ? props.secClass + ' ' + 'dev_services sec_pad' : 'dev_services sec_pad'}>
-//             <div className="container">
-//                 <div className="row">
-//                     <div className={props.extraClasscol1 ? props.extraClasscol1 + ' ' + 'col-lg-6 col-md-12' : 'col-lg-6 col-md-12'}>
-//                         <div className="img_wrapper">
-//                             <img src={props.img} alt="" className="img-fluid" />
-//                         </div>
-//                     </div>
-//                     <div className={props.extraClasscol2 ? props.extraClasscol2 + ' ' + 'col-lg-6 col-md-12' : 'col-lg-6 col-md-12'}>
-//                         <div className="col_hd">
-//                             <h4>{props.colhd} {props.colhdSpan &&
-//                                 <span className="txt_red">{props.colhdSpan}</span>
-//                             }
-//                             </h4>
-//                             <p className="desc">
-//                                 {props.para}
-//                             </p>
-//                             {props.conBtn}
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </section>
-//     );
-
-// }

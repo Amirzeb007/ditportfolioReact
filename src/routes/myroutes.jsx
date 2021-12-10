@@ -14,6 +14,7 @@ import CareerPage from '../views/career';
 import ContactUsPage from '../views/contact-us';
 import NotFound from '../views/not-found';
 import MobileAppPage from '../views/mobile-dev';
+import WebDevPage from '../views/website-dev';
 
 function MyRoutes() {
     return (
@@ -23,6 +24,7 @@ function MyRoutes() {
                 <Route exact path="/services" element={<ServicesPage />} />
                 <Fragment>
                     <Route exact path="/services/mobile-app-development" element={<MobileAppPage />} />
+                    <Route exact path="/services/website-developemnt" element={<WebDevPage />} />
                 </Fragment>
                 <Route exact path="/technology" element={<TechnologiesPage />} />
                 <Route exact path="/insights" element={<InsightsPage />} />

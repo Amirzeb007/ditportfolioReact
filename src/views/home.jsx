@@ -32,7 +32,6 @@ import {
     qoute_icon,
     test_art
 } from '../assets/img';
-import { Component } from 'react';
 
 class Home extends React.Component {
     constructor(props) {

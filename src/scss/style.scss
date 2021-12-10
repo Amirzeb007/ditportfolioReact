@@ -37,6 +37,7 @@ html{
     --red: #C7041D;
     --red_light: #F83C3B;
     --pink_base: #FCECED;
+    --light-pink: #FFEFEF;
     --gradient-red: linear-gradient(to right, #C7041D, #D00E22);
     scrollbar-width: thin;
     scrollbar-color: var(--red) #fff;
@@ -84,7 +85,7 @@ body{
 .common_btn{
     display: block;
     font-weight: 500;
-    font-size: clamp(1rem,2vw,1.2rem);
+    font-size: clamp(1rem,1.5vw,1.2rem);
     border-radius: 2rem;
     padding: 0.6em 1.5em;
     width: 100%;
@@ -98,4 +99,4 @@ body{
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -15px;
 }
 
-@import 'mixins','header','footer','banner','lightroom','content','responsive','comingSoon','notFound';
+@import 'mixins','header','footer','banner','lightroom','home','responsive','content','comingSoon','notFound';
