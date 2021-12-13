@@ -2025,14 +2025,17 @@ footer .info_ul input[type=button] {
 }
 .process_sec .styled_flex .box {
   width: 200px;
-  border: 1px solid;
+}
+.process_sec .styled_flex .box .nmbr {
+  font-weight: 900;
+  font-size: 28px;
+  transform: skew(-28deg) rotateX(-50deg) rotateY(12deg) rotateZ(-52deg);
+  position: absolute;
+  top: -87px;
+  left: 32px;
 }
 .process_sec .styled_flex .box .img_wrapper {
   z-index: 15;
-}
-.process_sec .styled_flex .box .img_wrapper .nmbr {
-  font-weight: 900;
-  font-size: 28px;
 }
 .process_sec .styled_flex .box .img_wrapper .wrapper {
   width: 100px;

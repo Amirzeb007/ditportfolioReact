@@ -123,8 +123,8 @@ function SectionTwo(props) {
                         </h4>
                         <div className="styled_flex">
                             <div className="box">
+                                <span className='nmbr'>01</span>
                                 <div className="img_wrapper">
-                                    <span className='nmbr'>01</span>
                                     <div className="wrapper">
                                         <img src={skew_scope} alt="" className="img-fluid" />
                                     </div>
@@ -135,8 +135,8 @@ function SectionTwo(props) {
                                 </div>
                             </div>
                             <div className="box">
+                                <span className='nmbr'>02</span>
                                 <div className="img_wrapper">
-                                    <span className='nmbr'>02</span>
                                     <div className="wrapper">
                                         <img src={skew_person} alt="" className="img-fluid" />
                                     </div>
@@ -147,8 +147,8 @@ function SectionTwo(props) {
                                 </div>
                             </div>
                             <div className="box">
+                                <span className='nmbr'>03</span>
                                 <div className="img_wrapper">
-                                    <span className='nmbr'>03</span>
                                     <div className="wrapper">
                                         <img src={skew_tags} alt="" className="img-fluid" />
                                     </div>
@@ -159,8 +159,8 @@ function SectionTwo(props) {
                                 </div>
                             </div>
                             <div className="box">
+                                <span className='nmbr'>04</span>
                                 <div className="img_wrapper">
-                                    <span className='nmbr'>04</span>
                                     <div className="wrapper">
                                         <img src={skew_setting} alt="" className="img-fluid" />
                                     </div>

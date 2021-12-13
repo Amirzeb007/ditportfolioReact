@@ -1,60 +1,75 @@
-.dev_services{
+.dev_services {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
-    &.bg_top{
+
+    &.bg_top {
         background-image: url(../assets/img/backgrounds/slight-curve-top.png);
-        .img_wrapper{
-            img{
+
+        .img_wrapper {
+            img {
                 max-width: 300px;
             }
         }
     }
-    &.bg_bottom{
+
+    &.bg_bottom {
         background-image: url(../assets/img/backgrounds/slight-curve-bottom.png);
-        .img_wrapper{
-            img{
+
+        .img_wrapper {
+            img {
                 max-width: 400px;
             }
         }
     }
+
     .bkg {
         background-color: #ffffff7a;
         padding-bottom: 1em;
     }
+
     .bkg2 {
         background-color: #ffffff7a;
         padding-top: 1em;
-    }    
-    h4{
-        font-size: clamp(1.4rem,2vw,2.5rem);
+    }
+
+    h4 {
+        font-size: clamp(1.4rem, 2vw, 2.5rem);
         margin-bottom: 0.5em;
-        span{
+
+        span {
             font-weight: 600;
         }
     }
-    .desc{
-        font-size: clamp(0.8rem,1.5vw,1.1rem);
+
+    .desc {
+        font-size: clamp(0.8rem, 1.5vw, 1.1rem);
     }
-    a{
+
+    a {
         margin-top: 2rem;
     }
-    &.gradient{
-        h4{
+
+    &.gradient {
+        h4 {
             color: #fff;
-            span{
+
+            span {
                 color: #fff;
             }
         }
-        .desc{
+
+        .desc {
             color: #fff;
         }
-        a:hover{
+
+        a:hover {
             color: var(--red);
         }
     }
-    .contact_form_wrapper{
-        form{
+
+    .contact_form_wrapper {
+        form {
             margin: 0 auto !important;
             padding: 8em 0px 10em;
         }
@@ -69,12 +84,14 @@
 
 @media (max-width:991px) {
     .dev_services .bkg {
-            order: -1;
+        order: -1;
     }
+
     .dev_services.bg_top .img_wrapper img {
         max-width: 200px;
         margin-top: 1.5em;
     }
+
     .dev_services.bg_bottom .img_wrapper img {
         max-width: 230px;
         margin-bottom: 1.5em;
@@ -82,32 +99,36 @@
 }
 
 @media (max-width:767px) {
-    .dev_services.small_img img{
-        max-width: 200px; 
+    .dev_services.small_img img {
+        max-width: 200px;
         margin-top: 2em;
     }
 }
 
 @media (max-width:767px) {
-    .dev_services .contact_form_wrapper{
+    .dev_services .contact_form_wrapper {
         background-color: #fff;
         background-image: none;
     }
+
     .dev_services .contact_form_wrapper form {
         padding: 0;
     }
 }
 
-.expertise_sec{
+.expertise_sec {
     background: var(--light-pink);
-    .small_hd{
+
+    .small_hd {
         text-align: center;
-        font-size: clamp(1rem,1.5vw,1.3rem);
+        font-size: clamp(1rem, 1.5vw, 1.3rem);
         margin-bottom: 2em;
     }
-    .flex_wrapper{
-        @include Flex(row,center,stretch,1rem,1rem,wrap);
-        .box{
+
+    .flex_wrapper {
+        @include Flex(row, center, stretch, 1rem, 1rem, wrap);
+
+        .box {
             width: 100%;
             max-width: 525px;
             background-color: #fff;
@@ -117,53 +138,65 @@
             display: flex;
             align-items: center;
             column-gap: 20px;
-            .img_wrapper{
+
+            .img_wrapper {
                 min-width: 108px;
                 height: 108px;
                 line-height: 108px;
                 border-radius: 100%;
                 background-color: var(--light-pink);
                 text-align: center;
-                img{
+
+                img {
                     display: inline-block;
                     max-width: 75px;
                 }
             }
-            h4{
+
+            h4 {
                 color: var(--red);
                 font-weight: 600;
-                font-size: clamp(0.85rem,1.5vw,1.3rem);
+                font-size: clamp(0.85rem, 1.5vw, 1.3rem);
                 margin-bottom: 0.4em;
             }
-            p{
-                font-size: clamp(0.7rem,2vw,0.95rem);
+
+            p {
+                font-size: clamp(0.7rem, 2vw, 0.95rem);
             }
         }
     }
 }
 
-.process_sec{
-    .styled_flex{
-        @include Flex(row,space-between,stretch,1rem,1rem,unset);
+.process_sec {
+    .styled_flex {
+        @include Flex(row, space-between, stretch, 1rem, 1rem, unset);
         width: 100%;
         margin: 0 auto;
         max-width: 1120px;
         height: 350px;
         margin-top: 4rem;
-        .box{
+
+        .box {
             width: 200px;
-            border: 1px solid;
-            .img_wrapper{
+
+            .nmbr {
+                font-weight: 900;
+                font-size: 28px;
+                transform: skew(-28deg) rotateX(-50deg) rotateY(12deg) rotateZ(-52deg);
+                position: absolute;
+                top: -87px;
+                left: 32px;
+            }
+
+            .img_wrapper {
                 z-index: 15;
-                .nmbr{
-                    font-weight: 900;
-                    font-size: 28px;
-                }
-                .wrapper{
+
+                .wrapper {
                     width: 100px;
                     height: 100px;
                     margin: 0 auto;
-                    &::after{
+
+                    &::after {
                         content: '';
                         position: absolute;
                         bottom: -25px;
@@ -174,19 +207,21 @@
                         filter: blur(1.3rem);
                         z-index: 5;
                     }
-                    &::before{
-                        content:'';
+
+                    &::before {
+                        content: '';
                         position: absolute;
                         transform: rotateX(45deg) rotate(45deg);
                         top: 0;
                         left: 0;
                         width: 100%;
                         height: 100%;
-                        border-radius: 25px;                        
+                        border-radius: 25px;
                         background-color: var(--light-pink);
                         z-index: 10;
                     }
-                    img{
+
+                    img {
                         position: absolute;
                         left: 50%;
                         transform: translateX(-50%);
@@ -196,62 +231,77 @@
                     }
                 }
             }
-            &:nth-child(odd){
+
+            &:nth-child(odd) {
                 align-self: start;
                 color: var(--red_light);
-                .caps{
+
+                .caps {
                     color: var(--red_light);
-                    h5::before{                    
+
+                    h5::before {
                         background-color: var(--red_light);
-                    } 
+                    }
                 }
-                .img_wrapper{
-                    .wrapper{
-                        &::before{
+
+                .img_wrapper {
+                    .wrapper {
+                        &::before {
                             box-shadow: inset -6px -6px 0px 0px var(--red_light);
                         }
-                        &::after{
+
+                        &::after {
                             background-color: var(--red_light)
                         }
                     }
                 }
-                .nmbr{
+
+                .nmbr {
                     @extend .caps;
                 }
             }
-            &:nth-child(even){
+
+            &:nth-child(even) {
                 align-self: end;
                 color: var(--red);
-                .caps{
+
+                .caps {
                     color: var(--red);
-                    h5::before{                    
+
+                    h5::before {
                         background-color: var(--red)
-                    }   
+                    }
                 }
-                .img_wrapper{
-                    .wrapper{
-                        &::before{
+
+                .img_wrapper {
+                    .wrapper {
+                        &::before {
                             box-shadow: inset -6px -6px 0px 0px var(--red);
                         }
-                        &::after{
+
+                        &::after {
                             background-color: var(--red_light)
                         }
                     }
                 }
-                .nmbr{
+
+                .nmbr {
                     @extend .caps;
                 }
             }
-            .caps{
+
+            .caps {
                 margin-top: 3em;
-                h5{
+
+                h5 {
                     color: inherit;
                     font-size: 22px;
                     padding-bottom: 0.5rem;
                     width: fit-content;
                     padding-right: 0.5em;
                     font-weight: 600;
-                    &::before{
+
+                    &::before {
                         content: '';
                         position: absolute;
                         width: 100%;
@@ -262,7 +312,8 @@
                         border-radius: 100%;
                     }
                 }
-                p{
+
+                p {
                     font-size: 14px;
                     line-height: normal;
                     color: #333;
