@@ -2027,12 +2027,13 @@ footer .info_ul input[type=button] {
   width: 200px;
 }
 .process_sec .styled_flex .box .nmbr {
-  font-weight: 900;
+  font-weight: 600;
   font-size: 28px;
-  transform: skew(-28deg) rotateX(-50deg) rotateY(12deg) rotateZ(-52deg);
+  transform: skew(-32deg) rotateX(-27deg) rotateY(19deg) rotateZ(-51deg);
   position: absolute;
   top: -87px;
   left: 32px;
+  filter: drop-shadow(0px -1px 0px red);
 }
 .process_sec .styled_flex .box .img_wrapper {
   z-index: 15;

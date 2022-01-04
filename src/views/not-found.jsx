@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function NotFound() {
     return (
-        <div>
+        <>
             <Header />
             <div className="not_found_page top_padd">
                 <div className="container">
@@ -18,7 +18,7 @@ function NotFound() {
                 </div>
             </div>
             <Footer />
-        </div>
+        </>
     );
 }
 
