@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../components/header/header';
-import Footer from '../components/footer/footer';
-import Banner from '../components/banner/banner';
-import MyContactForm from '../components/contact_form_sec/form';
+import Header from '../components/header';
+import Footer from '../components/footer';
+import Banner from '../components/banner';
+import MyContactForm from '../components/contact_form_sec/contact-form';
 import {
     mobile_dev_banner,
     mobile_mock1,

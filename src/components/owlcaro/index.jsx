@@ -6,7 +6,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 function MyOwlCarousel(props) {
     return (
         <ReactOwlCarousel
-            className={props.myClassess}
+            className={props.extraClass}
             {...props.myOptions}
         >
             {props.items}

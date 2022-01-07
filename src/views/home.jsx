@@ -1,13 +1,13 @@
 import React, { useEffect } from 'react';
-import Header from '../components/header/header';
-import Footer from '../components/footer/footer';
+import Header from '../components/header';
+import Footer from '../components/footer';
 import { Link } from 'react-router-dom';
-import Banner from '../components/banner/banner';
-import OurServicesSec from '../components/services_sec/our_services_sec';
-import AboutSec from '../components/about_sec/about_sec';
-import PortfolioSec from '../components/portfolio_sec/portfolio_sec';
-import ContactFormSec from '../components/contact_form_sec/contact_form';
-import OurClient from '../components/our-clients/our-client-sec';
+import Banner from '../components/banner';
+import OurServicesSec from '../components/services_sec';
+import AboutSec from '../components/about_sec';
+import PortfolioSec from '../components/portfolio_sec';
+import ContactFormSec from '../components/contact_form_sec';
+import OurClient from '../components/our-clients';
 import TestiSec from '../components/testmonials';
 import {
     homeBanner,

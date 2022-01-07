@@ -4,7 +4,7 @@ import {
     location,
     mobile,
 } from '../../assets/img';
-import MyContactForm from './form';
+import MyContactForm from './contact-form';
 
 function ContactFormSec(props) {
     return (

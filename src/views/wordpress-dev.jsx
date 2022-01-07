@@ -4,54 +4,66 @@ import Footer from '../components/footer';
 import Banner from '../components/banner';
 import { Card2by2 } from '../components/cards';
 import {
-    icon_api,
-    icon_levels,
-    icon_responsive,
-    icon_tags,
     skew_person,
     skew_scope,
     skew_setting,
     skew_tags,
-    web_dev_banner
+    wordpress_banner,
+    fullstack,
+    plugins,
+    setting,
+    u_friendly
 } from '../assets/img';
 import HelpYou from '../components/help-you';
 
-function WebDevPage() {
+function WordpessDevPage() {
 
     useEffect(() => {
-        document.title = "Webiste Development | DiscoverItech"
+        document.title = "Wordpress Development | DiscoverItech"
     }, []);
 
-    const bannerImg = web_dev_banner;
+    const bannerImg = wordpress_banner;
     const cards = [
-        { img: icon_tags, hd: 'Full Stack Expertise', para: 'We are one of the very few who have expertise in all of the latest technologies of all major platforms.' },
-        { img: icon_responsive, hd: 'Device Agnostic Solutions', para: 'All of our Solutions are mobile-ready and tested on all major mobile devices.' },
-        { img: icon_api, hd: 'Integration and API Exerts', para: 'We have a penchant of carrying out even the most difficult software integration and integration API development.' },
-        { img: icon_levels, hd: 'Scalibility and Flexibilty', para: 'Using micro-service architecture, we create solutions that is easily extensible and scalable.' },
+        { img: fullstack, hd: 'Full Stack Expertise', para: 'We are one of the very few who have expertise in professional WordPress platform development.' },
+        { img: u_friendly, hd: 'Theme Development', para: 'Our developers can develop a high functional WordPress theme.' },
+        { img: plugins, hd: 'Plugin Development', para: 'Custom Plugin Development. Get any plugin development by our expert developers' },
+        { img: setting, hd: 'Integration and API Experts', para: 'We can easily do software integration and integrating API development.' },
     ]
     return (
         <>
             <Header />
             <Banner
                 bannerImg={bannerImg}
-                bannerHd="Web"
+                bannerHd="WordPress"
                 bannerhdSpan="Development"
-                bannerCaps="We create websites and applications that provide effective solutions for your goals. We have just awesome web development services! Our professional ewb developers provide web application development services to our valuable clients. DiscoveriTech offers a variety of website design and development services, from a simple corporate website to custom e-commerce. We are intranet experiences using the latest and proven web technologies."
+                bannerCaps="We create complete full-stack WordPress web application developers."
             />
+            <section className="intro_sec mb-5">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-12">
+                            <h4 className="sec_hd txt_black fw-normal">
+                                WordPress Web <font className='fw-bold txt_red'>Development Services</font>
+                            </h4>
+                            <p className="desc text-center mt-3">
+                                Discover iTech is a professional WordPress website development studio that has designed and developed hundreds of custom WordPress powered websites. We specialize in developing professional WordPress websites that are attractive, functional, and target our client’s audience. We offer top quality work, latest web solutions, free support, and freelance rates to our valuable customers. We have a professional and experienced team, who can develop a WordPress website, develop a WordPress Theme and WordPress Plugin.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <Card2by2
                 hd="There are many reasons why our clients come to us again and again"
                 cards={cards}
             />
-            <SectionTwo />
+            <PrcoessSec />
             <HelpYou />
             <Footer />
         </>
     );
 }
 
-
-
-function SectionTwo(props) {
+function PrcoessSec(props) {
     return (
         <section className='sec_pad process_sec'>
             <div className="container-fluid">
@@ -109,6 +121,18 @@ function SectionTwo(props) {
                                     <p>Test performance in every environment</p>
                                 </div>
                             </div>
+                            <div className="box">
+                                <span className='nmbr'>05</span>
+                                <div className="img_wrapper">
+                                    <div className="wrapper">
+                                        <img src={skew_tags} alt="" className="img-fluid" />
+                                    </div>
+                                </div>
+                                <div className="caps">
+                                    <h5>Iterate</h5>
+                                    <p>Time to make the app even better</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -117,4 +141,4 @@ function SectionTwo(props) {
     );
 }
 
-export default WebDevPage;
+export default WordpessDevPage;

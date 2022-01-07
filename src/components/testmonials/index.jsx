@@ -1,5 +1,5 @@
 import React from 'react';
-import MyOwlCarousel from '../owlcaro/owl-carousal';
+import MyOwlCarousel from '../owlcaro';
 
 function TestiSec(props) {
     const options = {
@@ -78,7 +78,7 @@ function TestiSec(props) {
                     <div className="col-lg-7 col-md-12 col-sm-12">
                         <div className="slider_wrapper">
                             <MyOwlCarousel
-                                myClassess={props.classes}
+                                extraClass={props.classes}
                                 myOptions={options}
                                 items={myCards()}
                             />

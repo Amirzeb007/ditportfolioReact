@@ -8,6 +8,9 @@ import app_dev from './cards/app-dev.png';
 import logo_design from './cards/logo-design.png';
 import social from './cards/social.png';
 import web_design from './cards/web-design.png';
+import angular from './cards/angular.png';
+import bootstrap from './cards/bootstrap.png';
+import sencha from './cards/sencha.png';
 import red_curve_top from './backgrounds/red-curve-top.png';
 import red_curve_bottom from './backgrounds/red-curve-bottom.png';
 import bg_circle from './backgrounds/circle.png';
@@ -46,6 +49,15 @@ import icon_tags from './icons/icon-tags.png';
 import icon_responsive from './icons/icon-responsive.png';
 import icon_api from './icons/icon-api.png';
 import icon_levels from './icons/icon-levels.png';
+import res_banner from './banners/res-banner.png';
+import wordpress_banner from './banners/wordpress-banner.png';
+import less_effort from './icons/effort.png';
+import mob_segment from './icons/segment.png';
+import u_friendly from './icons/u-friendly.png';
+import ux from './icons/ux.png';
+import plugins from './icons/plugins.png';
+import setting from './icons/setting.png';
+import fullstack from './icons/full-stack.png';
 
 export{
     sitelogo,
@@ -96,4 +108,16 @@ export{
     icon_responsive,
     icon_api,
     icon_levels,
+    res_banner,
+    less_effort,
+    mob_segment,
+    u_friendly,
+    ux,
+    fullstack,
+    setting,
+    plugins,
+    wordpress_banner,
+    angular,
+    bootstrap,
+    sencha
 };

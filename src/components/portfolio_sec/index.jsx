@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import MyLightroom from '../custom_lightroom/lightroom';
+import MyLightroom from '../custom_lightroom';
 
 function PortfolioSec(props) {
 

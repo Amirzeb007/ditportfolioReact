@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 function MyDropDownMenu(props) {
     const dropItem = props.dropItem;
@@ -7,7 +7,7 @@ function MyDropDownMenu(props) {
         <ul className="dropdown-menu">
             {
                 dropItem.map((item, i) => {
-                    return <li key={i}><Link className={props.dropClass} to={item.url}>{item.txt}</Link></li>;
+                    return <li key={i}><NavLink className={props.dropClass} to={item.url}>{item.txt}</NavLink></li>;
                 })
             }
         </ul>

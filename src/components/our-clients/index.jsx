@@ -1,5 +1,5 @@
 import React from 'react';
-import MyOwlCarousel from '../owlcaro/owl-carousal';
+import MyOwlCarousel from '../owlcaro';
 
 function OurClient(props) {
 
@@ -52,7 +52,7 @@ function OurClient(props) {
                     <div className="col-sm-12">
                         <div className="slider_wrapper">
                             <MyOwlCarousel
-                                myClassess={props.classes}
+                                extraClass={props.classes}
                                 myOptions={options}
                                 items={myCards()}
                             />

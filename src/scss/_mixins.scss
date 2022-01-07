@@ -1,6 +1,10 @@
 @mixin Fade($x) {
     transition: $x all ease-in-out;
 }
+
+@mixin Smooth($x) {
+    transition: $x all ease-in-out;
+}
 @mixin Flex($x,$y,$z,$a,$b,$k) {
     display: flex;
     flex-direction: $x;

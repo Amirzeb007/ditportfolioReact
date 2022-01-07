@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
-import Footer from '../components/footer/footer';
-import Header from '../components/header/header';
-import PortfolioSec from '../components/portfolio_sec/portfolio_sec';
+import Footer from '../components/footer';
+import Header from '../components/header';
+import PortfolioSec from '../components/portfolio_sec';
 import { Link } from 'react-router-dom';
 import {
     app_1,
@@ -74,7 +74,6 @@ function Portfolio() {
         <>
             <Header />
             <PortfolioSec
-                extraClass={"top_padd"}
                 portfolioSechd="Portfolio"
                 portfolioSechdSpan="Checkout the work we've done for our other clients. Our portfolio includes case studies for work done for"
                 portfolioCards={allWork}

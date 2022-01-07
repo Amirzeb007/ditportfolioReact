@@ -15,6 +15,8 @@ import ContactUsPage from '../views/contact-us';
 import NotFound from '../views/not-found';
 import MobileAppPage from '../views/mobile-dev';
 import WebDevPage from '../views/website-dev';
+import ResWebDesign from '../views/res-web-design';
+import WordpessDevPage from '../views/wordpress-dev';
 
 function MyRoutes() {
     return (
@@ -25,6 +27,8 @@ function MyRoutes() {
                 <Fragment>
                     <Route exact path="/services/mobile-app-development" element={<MobileAppPage />} />
                     <Route exact path="/services/website-developemnt" element={<WebDevPage />} />
+                    <Route exact path="/services/wordpress-development" element={<WordpessDevPage />} />
+                    <Route exact path="/services/responsive-website-design" element={<ResWebDesign />} />
                 </Fragment>
                 <Route exact path="/technology" element={<TechnologiesPage />} />
                 <Route exact path="/insights" element={<InsightsPage />} />

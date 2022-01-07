@@ -88,13 +88,6 @@
 /* --------------------------------- 1200px ------------------------------ */
 /* ----------------------------------------------------------------------- */
 @media (max-width: 1200px){
-    // header .common_btn {
-    //     margin-left: 1rem;
-    //     max-width: 165px;
-    // }
-    .top_padd {
-        padding-top: 10em !important;
-    }
     .secvices_cards .img-wrapper {
         height: 175px;
         line-height: 175px;
@@ -206,7 +199,7 @@
         padding-right: 5em;
     }
     .banner{
-        padding-top: 8rem;
+        padding-top: 4rem;
         padding-bottom: 4rem;
     }
     .portfolio_tabs_wrapper .nav {
@@ -314,18 +307,12 @@
 /* ----------------------------------------------------------------------- */
 
 @media (max-width: 767px){
-    .top_padd {
-        padding-top: 7em !important;
-    }
     footer .info_ul {
         margin-bottom: 2.5rem;
     }
     footer .container.colphon {
         padding-top: 4em;
         padding-bottom: 4em;
-    }
-    .banner {
-        padding-top: 7rem;
     }
     .banner .banner_hd{
         text-align: center;

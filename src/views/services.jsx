@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from '../components/footer/footer';
-import Header from '../components/header/header';
+import Footer from '../components/footer';
+import Header from '../components/header';
 import ComingSoon from '../components/coming-soon';
 
 function ServicesPage() {

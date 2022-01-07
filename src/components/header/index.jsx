@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { sitelogo } from '../../assets/img';
 import { Link } from 'react-router-dom';
 import MyLogo from '../site-logo';
@@ -15,8 +15,8 @@ function Header() {
                     dropdown2: [
                         { url: '/services/mobile-app-development', txt: 'Mobile App Development' },
                         { url: '/services/website-developemnt', txt: 'Website Devevelopment' },
-                        { url: '/', txt: 'WordPress Development' },
-                        { url: '/', txt: 'Responsive Web Design' },
+                        { url: '/services/wordpress-development', txt: 'WordPress Development' },
+                        { url: '/services/responsive-website-design', txt: 'Responsive Web Design' },
                         { url: '/', txt: 'Blockchain Development' },
                     ]
                 },
@@ -146,8 +146,10 @@ function Header() {
         { url: '/career', txt: 'Career' },
     ]
 
+    const [menuHidden, setmenuHidden] = useState("true");
+
     return (
-        <header className="header_absolute">
+        <header>
             <nav className="navbar navbar-expand-lg">
                 <div className="container">
                     <MyLogo
@@ -157,11 +159,11 @@ function Header() {
                         alt="DIT Logo"
                         imgclass="img-fluid"
                     />
-                    <span className="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler" onClick={() => setmenuHidden(!menuHidden)}>
                         <span className="fa fa-bars"></span>
                     </span>
-                    <div className="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div className="navbar_collapse" data-hidden={menuHidden}>
+                        <span className="fa fa-times" onClick={() => setmenuHidden(!menuHidden)}></span>
                         <Nav
                             navItem={topNavigation}
                         />
