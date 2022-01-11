@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react';
-import Header from '../components/header';
-import Footer from '../components/footer';
 import { Link } from 'react-router-dom';
 import Banner from '../components/banner';
 import OurServicesSec from '../components/services_sec';
@@ -132,17 +130,15 @@ function Home() {
     const contactUS_btn = <Link to="/contact-us" className="common_btn btn_hover txt_white bg_red">Contact Us</Link>;
     const learnMore_btn = <Link to="/" className="txt_white common_btn bg_red btn_hover">Learn More</Link>;
     const ViewMore_btn = <Link to="/" className="common_btn btn_hover txt_white bg_red mx-auto mt-5 view_more">View More</Link>;
-    const bannerImg = homeBanner;
-    const testiCaroClassess = "owl-theme testi_slider";
-    const clientCaroClassess = "owl-theme clients_slider";
+
     useEffect(() => {
         document.title = "Home | DiscoverItech"
     }, []);
+
     return (
         <>
-            <Header />
             <Banner
-                bannerImg={bannerImg}
+                bannerImg={homeBanner}
                 bannerHd="We make IT,"
                 bannerhdSpan="Possible"
                 bannerCaps="Being a top-notch Custom software development company, our services are designed to take your business to the next level, reducing the gap between you and the heights of success you wish to achieve"
@@ -175,7 +171,7 @@ function Home() {
                 SecHd="Our Clients"
                 SecHdSpan="Yah... There is a reason why working with us makes sense. We are counted amoung the world's best software development company because we deliver with speed, precision, and professional quality."
                 cards={ourClientCards}
-                classes={clientCaroClassess}
+                classes='owl - theme clients_slider'
             />
             <TestiSec
                 SecHd="Client Testimonial"
@@ -185,13 +181,12 @@ function Home() {
                 colimg={test_art}
                 colimgsm={qoute_icon}
                 cards={testmonials}
-                classes={testiCaroClassess}
+                classes='owl-theme testi_slider'
             />
             <ContactFormSec
                 sechd="Get In Touch & Get Started Today!"
                 sechdSpan="Let Us Turn Your Ideas Into Reality."
             />
-            <Footer />
         </>
     );
 }

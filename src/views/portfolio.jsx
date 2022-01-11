@@ -1,6 +1,4 @@
 import React, { useEffect } from 'react';
-import Footer from '../components/footer';
-import Header from '../components/header';
 import PortfolioSec from '../components/portfolio_sec';
 import { Link } from 'react-router-dom';
 import {
@@ -72,7 +70,6 @@ function Portfolio() {
     const ViewMore_btn = <Link to="/" className="common_btn btn_hover txt_white bg_red mx-auto mt-5 view_more">View More</Link>;
     return (
         <>
-            <Header />
             <PortfolioSec
                 portfolioSechd="Portfolio"
                 portfolioSechdSpan="Checkout the work we've done for our other clients. Our portfolio includes case studies for work done for"
@@ -84,7 +81,6 @@ function Portfolio() {
                 tab4="App"
                 tab5="Social Media"
             />
-            <Footer />
         </>
     );
 }

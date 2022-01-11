@@ -1,14 +1,19 @@
 import React from 'react';
 import MyOwlCarousel from '../owlcaro';
-import { res_banner } from '../../assets/img';
-import { angular, sencha, bootstrap } from '../../assets/img';
+import { slider_icon } from '../../assets/img';
 
-function Tec_slider() {
+function TecSlider(props) {
+
+    const { cards, sliderClass } = props;
+
     const options = {
+        margin: 5,
         loop: true,
-        margin: 10,
+        autoplay: true,
+        autoplayHoverPause: true,
         dots: true,
         nav: true,
+        navText: [`<img src=${slider_icon} className="img-fluid" />`, `<img src=${slider_icon} className="img-fluid" />`],
         smartSpeed: 900,
         responsive: {
             0: {
@@ -17,29 +22,28 @@ function Tec_slider() {
             768: {
                 items: 2
             },
-            992: {
+            1080: {
                 items: 3
             }
         }
     }
+
     const myCards = () => {
-        return [angular, bootstrap, sencha, angular].map((item, i) => {
+        return cards.map((item, i) => {
             return (
                 <div key={i} className="item">
-                    <div className="wrap">
+                    <div className='wrap'>
                         <div className="slide_header">
                             <div className="img_wrapper">
-                                <img src={item} alt="" className="img-fluid" />
-                            </div>
-                            <div className="caps">
-                                <h4>
-                                    Angularjs Technology
-                                </h4>
+                                <img src={item.img} alt="" className="img-fluid" />
                             </div>
                         </div>
                         <div className="slide_body">
+                            <h4>
+                                {item.hd}
+                            </h4>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam amet nostrum ex officiis, delectus placeat itaque excepturi quaerat mollitia? Quod eos cumque, inventore incidunt culpa exercitationem doloribus veritatis repellendus debitis.
+                                {item.para}
                             </p>
                         </div>
                     </div>
@@ -47,13 +51,14 @@ function Tec_slider() {
             );
         });
     }
+
     return (
         <MyOwlCarousel
             myOptions={options}
             items={myCards()}
-            extraClass='tec_slider'
+            extraClass={sliderClass}
         />
     );
 }
 
-export default Tec_slider;
+export default TecSlider;

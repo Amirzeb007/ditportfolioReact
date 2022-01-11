@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { envelope, mobile, sitelogo2 } from '../../assets/img';
 import MyLogo from '../site-logo';
@@ -170,10 +171,9 @@ function Footer() {
     ]
     return (
         <footer>
-            <div className="container colphon">
-                <div className="row">
-
-                    <div className="col-lg-4 col-md-5 col-sm-12">
+            <Container className="colphon">
+                <Row>
+                    <Col lg={4} md={5} sm={12}>
                         <div className="inner-wrapper">
                             <ul className="info_ul">
                                 <li>
@@ -218,9 +218,8 @@ function Footer() {
                                 </li>
                             </ul>
                         </div>
-                    </div>
-
-                    <div className="col-lg-8 col-md-7 col-sm-12">
+                    </Col>
+                    <Col lg={8} md={7} sm={12}>
                         <div className="footer_navigation">
                             <MyColumns
                                 hd="Services"
@@ -243,23 +242,22 @@ function Footer() {
                             <SocialIcons
                                 items={socialItems} />
                         </div>
-                    </div>
-
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
             <div className="foo_bottom">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
+                <Container>
+                    <Row>
+                        <Col>
                             <div className="copyright">
                                 <p>&copy; Copyrights 2021. All Rights Reserved.</p>
                                 <p>
                                     <Link to="/">Privacy Policy</Link> &nbsp; &nbsp; |&nbsp; &nbsp; <Link to="/">Terms & Conditions</Link>
                                 </p>
                             </div>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
             </div>
         </footer>
     );

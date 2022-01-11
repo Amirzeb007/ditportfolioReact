@@ -1,8 +1,6 @@
 import React, { useEffect } from 'react';
-import Header from '../components/header';
-import Footer from '../components/footer';
 import Banner from '../components/banner';
-import { Card2by2 } from '../components/cards';
+import { Col2Cards } from '../components/cards';
 import {
     skew_person,
     skew_scope,
@@ -15,6 +13,7 @@ import {
     u_friendly
 } from '../assets/img';
 import HelpYou from '../components/help-you';
+import { Col, Container, Row } from 'react-bootstrap';
 
 function WordpessDevPage() {
 
@@ -22,7 +21,6 @@ function WordpessDevPage() {
         document.title = "Wordpress Development | DiscoverItech"
     }, []);
 
-    const bannerImg = wordpress_banner;
     const cards = [
         { img: fullstack, hd: 'Full Stack Expertise', para: 'We are one of the very few who have expertise in professional WordPress platform development.' },
         { img: u_friendly, hd: 'Theme Development', para: 'Our developers can develop a high functional WordPress theme.' },
@@ -31,34 +29,42 @@ function WordpessDevPage() {
     ]
     return (
         <>
-            <Header />
             <Banner
-                bannerImg={bannerImg}
+                bannerImg={wordpress_banner}
                 bannerHd="WordPress"
                 bannerhdSpan="Development"
                 bannerCaps="We create complete full-stack WordPress web application developers."
             />
             <section className="intro_sec mb-5">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
+                <Container>
+                    <Row>
+                        <Col>
                             <h4 className="sec_hd txt_black fw-normal">
                                 WordPress Web <font className='fw-bold txt_red'>Development Services</font>
                             </h4>
-                            <p className="desc text-center mt-3">
+                            <p className="desc mxwidth_75 mx-auto text-center mt-3">
                                 Discover iTech is a professional WordPress website development studio that has designed and developed hundreds of custom WordPress powered websites. We specialize in developing professional WordPress websites that are attractive, functional, and target our client’s audience. We offer top quality work, latest web solutions, free support, and freelance rates to our valuable customers. We have a professional and experienced team, who can develop a WordPress website, develop a WordPress Theme and WordPress Plugin.
                             </p>
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
             </section>
-            <Card2by2
-                hd="There are many reasons why our clients come to us again and again"
-                cards={cards}
-            />
+            <section className='expertise_sec py-5'>
+                <Container>
+                    <Row>
+                        <Col>
+                            <h5 className="small_hd">There are many reasons why our clients come to us again and again</h5>
+                            <div className="flex_wrapper">
+                                <Col2Cards
+                                    cards={cards}
+                                />
+                            </div>
+                        </Col>
+                    </Row>
+                </Container>
+            </section >
             <PrcoessSec />
             <HelpYou />
-            <Footer />
         </>
     );
 }
@@ -66,9 +72,9 @@ function WordpessDevPage() {
 function PrcoessSec(props) {
     return (
         <section className='sec_pad process_sec'>
-            <div className="container-fluid">
-                <div className="row">
-                    <div className="col-12">
+            <Container>
+                <Row>
+                    <Col>
                         <h4 className="sec_hd txt_black fw-normal">
                             Our Web Application <font className='fw-bold txt_red'>Development Process</font>
                         </h4>
@@ -134,9 +140,9 @@ function PrcoessSec(props) {
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         </section>
     );
 }

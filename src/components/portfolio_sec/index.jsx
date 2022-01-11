@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Container, Row, Col, Tab, Nav } from 'react-bootstrap';
 import MyLightroom from '../custom_lightroom';
 
 function PortfolioSec(props) {
@@ -13,139 +14,136 @@ function PortfolioSec(props) {
 
     return (
         <section className={props.extraClass ? 'portfolio_sec sec_pad top_padd' : 'portfolio_sec sec_pad'}>
-            <div className="container">
-                <div className="row mb-5">
-                    <div className="col-lg-12">
+            <Container>
+                <Row className="mb-5">
+                    <Col>
                         <h2 className="sec_hd txt_white">
                             {props.portfolioSechd}
                             {props.portfolioSechdSpan && <span>
                                 {props.portfolioSechdSpan}
                             </span>}
                         </h2>
-                    </div>
-                </div>
-                <div className="row">
-                    <div className="col-12">
+                    </Col>
+                </Row>
+                <Row>
+                    <Col>
                         <div className="portfolio_tabs_wrapper">
-                            <ul className="nav nav-pills" id="portfolio-tab" role="tablist">
-                                <li className="nav-item" role="presentation">
-                                    <button className="nav-link active" id="pills-all-work" data-bs-toggle="pill" data-bs-target="#all-work"
-                                        type="button" role="tab" aria-controls="all-work" aria-selected="true">{props.tab1}</button>
-                                </li>
-                                <li className="nav-item" role="presentation">
-                                    <button className="nav-link" id="pills-website" data-bs-toggle="pill" data-bs-target="#website"
-                                        type="button" role="tab" aria-controls="website" aria-selected="false">{props.tab2}</button>
-                                </li>
-                                <li className="nav-item" role="presentation">
-                                    <button className="nav-link" id="pills-branding" data-bs-toggle="pill" data-bs-target="#branding"
-                                        type="button" role="tab" aria-controls="branding" aria-selected="false">{props.tab3}</button>
-                                </li>
-                                <li className="nav-item" role="presentation">
-                                    <button className="nav-link" id="pills-app" data-bs-toggle="pill" data-bs-target="#app" type="button"
-                                        role="tab" aria-controls="app" aria-selected="false">{props.tab4}</button>
-                                </li>
-                                <li className="nav-item" role="presentation">
-                                    <button className="nav-link" id="pills-social-media" data-bs-toggle="pill" data-bs-target="#social-media"
-                                        type="button" role="tab" aria-controls="social-media" aria-selected="false">{props.tab5}</button>
-                                </li>
-                            </ul>
-                            <div className="tab-content" id="pills-tabContent">
-                                <div className="tab-pane fade show active" id="all-work" role="tabpanel" aria-labelledby="pills-all-work">
-                                    <div className="flex_box">
-                                        {
-                                            props.portfolioCards.map((item, i) => {
-                                                return (
-                                                    <div key={i} className="portfolio_cards">
-                                                        <div className="img_wrapper">
-                                                            <div className="wrap open_lightroom" data-bs-toggle="modal" data-bs-target="#lightRoom">
-                                                                <img src={item.img} alt="" onClick={() => OpenLightRoom(item.img, i)} className="img-fluid" />
+                            <Tab.Container id="portfolio-tab" defaultActiveKey="pills-all-work">
+                                <Nav variant="pills" className="flex-row">
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="pills-all-work">{props.tab1}</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="pills-website">{props.tab2}</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="pills-branding">{props.tab3}</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="pills-app">{props.tab4}</Nav.Link>
+                                    </Nav.Item>
+                                    <Nav.Item>
+                                        <Nav.Link eventKey="pills-social-media">{props.tab5}</Nav.Link>
+                                    </Nav.Item>
+                                </Nav>
+                                <Tab.Content>
+                                    <Tab.Pane eventKey="pills-all-work">
+                                        <div className="flex_box">
+                                            {
+                                                props.portfolioCards.map((item, i) => {
+                                                    return (
+                                                        <div key={i} className="portfolio_cards">
+                                                            <div className="img_wrapper">
+                                                                <div className="wrap open_lightroom" data-bs-toggle="modal" data-bs-target="#lightRoom">
+                                                                    <img src={item.img} alt="" onClick={() => OpenLightRoom(item.img, i)} className="img-fluid" />
+                                                                </div>
+                                                                <span>{item.span}</span>
                                                             </div>
-                                                            <span>{item.span}</span>
+                                                            <h5>{item.span}</h5>
                                                         </div>
-                                                        <h5>{item.span}</h5>
-                                                    </div>);
-                                            })
-                                        }
-                                    </div>
-                                    {props.portfolioViewBtn && props.portfolioViewBtn}
-                                </div>
-                                {/* <div className="tab-pane fade" id="website" role="tabpanel" aria-labelledby="pills-website">
-                                    <div className="flex_box">
-                                        {
-                                            props.portfolioCards.map((item, i) => {
-                                                return (
-                                                    <div key={i} className="portfolio_cards">
-                                                        <div className="img_wrapper">
-                                                            <div className="wrap open_lightroom" data-bs-toggle="modal" data-bs-target="#lightRoom">
-                                                                <img src={item.img} alt="" className="img-fluid" />
+                                                    );
+                                                })
+                                            }
+                                        </div>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="pills-website">
+                                        <div className="flex_box">
+                                            {
+                                                props.portfolioCards.map((item, i) => {
+                                                    return (
+                                                        <div key={i} className="portfolio_cards">
+                                                            <div className="img_wrapper">
+                                                                <div className="wrap open_lightroom" data-bs-toggle="modal" data-bs-target="#lightRoom">
+                                                                    <img src={item.img} alt="" onClick={() => OpenLightRoom(item.img, i)} className="img-fluid" />
+                                                                </div>
+                                                                <span>{item.span}</span>
                                                             </div>
-                                                            <span>{item.span}</span>
-                                                        </div>
-                                                        <h5>{item.span}</h5>
-                                                    </div>);
-                                            })
-                                        }
-                                    </div>
-                                </div>
-                                <div className="tab-pane fade" id="branding" role="tabpanel" aria-labelledby="pills-branding">
-                                    <div className="flex_box">
-                                        {
-                                            props.portfolioCards.map((item, i) => {
-                                                return (
-                                                    <div key={i} className="portfolio_cards">
-                                                        <div className="img_wrapper">
-                                                            <div className="wrap open_lightroom" data-bs-toggle="modal" data-bs-target="#lightRoom">
-                                                                <img src={item.img} alt="" className="img-fluid" />
+                                                            <h5>{item.span}</h5>
+                                                        </div>);
+                                                })
+                                            }
+                                        </div>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="pills-branding">
+                                        <div className="flex_box">
+                                            {
+                                                props.portfolioCards.map((item, i) => {
+                                                    return (
+                                                        <div key={i} className="portfolio_cards">
+                                                            <div className="img_wrapper">
+                                                                <div className="wrap open_lightroom" data-bs-toggle="modal" data-bs-target="#lightRoom">
+                                                                    <img src={item.img} alt="" onClick={() => OpenLightRoom(item.img, i)} className="img-fluid" />
+                                                                </div>
+                                                                <span>{item.span}</span>
                                                             </div>
-                                                            <span>{item.span}</span>
-                                                        </div>
-                                                        <h5>{item.span}</h5>
-                                                    </div>);
-                                            })
-                                        }
-                                    </div>
-                                </div>
-                                <div className="tab-pane fade" id="app" role="tabpanel" aria-labelledby="pills-app">
-                                    <div className="flex_box">
-                                        {
-                                            props.portfolioCards.map((item, i) => {
-                                                return (
-                                                    <div key={i} className="portfolio_cards">
-                                                        <div className="img_wrapper">
-                                                            <div className="wrap open_lightroom" data-bs-toggle="modal" data-bs-target="#lightRoom">
-                                                                <img src={item.img} alt="" className="img-fluid" />
+                                                            <h5>{item.span}</h5>
+                                                        </div>);
+                                                })
+                                            }
+                                        </div>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="pills-app">
+                                        <div className="flex_box">
+                                            {
+                                                props.portfolioCards.map((item, i) => {
+                                                    return (
+                                                        <div key={i} className="portfolio_cards">
+                                                            <div className="img_wrapper">
+                                                                <div className="wrap open_lightroom" data-bs-toggle="modal" data-bs-target="#lightRoom">
+                                                                    <img src={item.img} alt="" onClick={() => OpenLightRoom(item.img, i)} className="img-fluid" />
+                                                                </div>
+                                                                <span>{item.span}</span>
                                                             </div>
-                                                            <span>{item.span}</span>
-                                                        </div>
-                                                        <h5>{item.span}</h5>
-                                                    </div>);
-                                            })
-                                        }
-                                    </div>
-                                </div>
-                                <div className="tab-pane fade" id="social-media" role="tabpanel" aria-labelledby="pills-social-media">
-                                    <div className="flex_box">
-                                        {
-                                            props.portfolioCards.map((item, i) => {
-                                                return (
-                                                    <div key={i} className="portfolio_cards">
-                                                        <div className="img_wrapper">
-                                                            <div className="wrap open_lightroom" data-bs-toggle="modal" data-bs-target="#lightRoom">
-                                                                <img src={item.img} alt="" className="img-fluid" />
+                                                            <h5>{item.span}</h5>
+                                                        </div>);
+                                                })
+                                            }
+                                        </div>
+                                    </Tab.Pane>
+                                    <Tab.Pane eventKey="pills-social-media">
+                                        <div className="flex_box">
+                                            {
+                                                props.portfolioCards.map((item, i) => {
+                                                    return (
+                                                        <div key={i} className="portfolio_cards">
+                                                            <div className="img_wrapper">
+                                                                <div className="wrap open_lightroom" data-bs-toggle="modal" data-bs-target="#lightRoom">
+                                                                    <img src={item.img} alt="" onClick={() => OpenLightRoom(item.img, i)} className="img-fluid" />
+                                                                </div>
+                                                                <span>{item.span}</span>
                                                             </div>
-                                                            <span>{item.span}</span>
-                                                        </div>
-                                                        <h5>{item.span}</h5>
-                                                    </div>);
-                                            })
-                                        }
-                                    </div>
-                                </div> */}
-                            </div>
+                                                            <h5>{item.span}</h5>
+                                                        </div>);
+                                                })
+                                            }
+                                        </div>
+                                    </Tab.Pane>
+                                </Tab.Content>
+                            </Tab.Container>
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
             <MyLightroom
                 url={url}
             />

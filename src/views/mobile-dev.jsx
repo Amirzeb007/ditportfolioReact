@@ -1,7 +1,5 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Header from '../components/header';
-import Footer from '../components/footer';
 import Banner from '../components/banner';
 import MyContactForm from '../components/contact_form_sec/contact-form';
 import {
@@ -11,6 +9,7 @@ import {
     html5_img,
     xamarian_logo
 } from '../assets/img';
+import { Col, Container, Row } from 'react-bootstrap';
 
 function MobileAppPage() {
 
@@ -18,14 +17,12 @@ function MobileAppPage() {
         document.title = "Mobile Development | DiscoverItech"
     }, []);
 
-    const bannerImg = mobile_dev_banner;
     const contactUS_btn = <Link to="/contact-us" className="common_btn btn_hover txt_white bg_red">Contact Us</Link>;
     const contactUS_btn_white = <Link to="/contact-us" className="common_btn btn_hover txt_red bg-light">Contact Us</Link>;
     return (
         <>
-            <Header />
             <Banner
-                bannerImg={bannerImg}
+                bannerImg={mobile_dev_banner}
                 bannerHd="Application"
                 bannerhdSpan="Development"
                 bannerCaps="We are one of the top app development companies providing the custom mobile app development service. At DiscoveriTech, fore the past decade we have been creating high performance, feature-packed mobile applications for iOS & Android phones. As an expert in mobile application develpopment services, we can create the right app that will meet all your business and industry needs."
@@ -71,18 +68,17 @@ function MobileAppPage() {
                 secClass="gradient small_img"
             />
             <section className="dev_services sec_pad">
-                <div className="container">
-                    <div className="row">
-                        <div className="col-12">
+                <Container>
+                    <Row>
+                        <Col>
                             <h4 className="sec_hd mb-5">
                                 How Can We Help You?
                             </h4>
                             <MyContactForm />
-                        </div>
-                    </div>
-                </div>
+                        </Col>
+                    </Row>
+                </Container>
             </section>
-            <Footer />
         </>
     );
 }
@@ -92,8 +88,8 @@ export default MobileAppPage;
 function SectionOne(props) {
     return (
         <section className={props.secClass ? props.secClass + ' dev_services sec_pad' : 'dev_services sec_pad'}>
-            <div className="container">
-                <div className="row">
+            <Container>
+                <Row>
                     <div className={props.extraClasscol1 ? props.extraClasscol1 : ''}>
                         <div className="img_wrapper text-center">
                             <img src={props.img} alt="" className="img-fluid" />
@@ -111,8 +107,8 @@ function SectionOne(props) {
                             {props.conBtn}
                         </div>
                     </div>
-                </div>
-            </div>
+                </Row>
+            </Container>
         </section>
     );
 }

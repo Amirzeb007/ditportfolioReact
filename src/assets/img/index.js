@@ -58,6 +58,45 @@ import ux from './icons/ux.png';
 import plugins from './icons/plugins.png';
 import setting from './icons/setting.png';
 import fullstack from './icons/full-stack.png';
+import slider_icon from './icons/slider-icon.png';
+import horse_icon from './icons/horse.png';
+import wallet_icon from './icons/wallet.png';
+import blockchain_icon from './icons/blockchain.png';
+import contract_icon from './icons/contract.png';
+import exchange_icon from './icons/exchange.png';
+import hyperledger_icon from './icons/hyperledger.png';
+import graphic_banner from './banners/graphic-banner.png';
+import sketching_design from './icons/sketching-design.png';
+import refining_design from './icons/refining-design.png';
+import graphic_research from './icons/graphic-research.png';
+import brief from './icons/brief.png';
+import process_timeline from './backgrounds/process-timeline.png';
+import logo_design_banner from './banners/logo-design-banner.png';
+import market_analysis from './icons/market-analysis.png';
+import resource_plan from './icons/resource-plan.png';
+import tec_helps from './icons/tec-helps.png';
+import tec_centric from './icons/tec-centric.png';
+import data_driven from './icons/data-driven.png';
+import phases from './icons/phases.png';
+import consult from './icons/consult.png';
+import web_mobile from './banners/web-mobile.png';
+import mobile_mock3 from './section_images/mob-mock.png';
+import wireframing_banner from './banners/wireframing-banner.png';
+import wireframing_icon from './icons/wireframing.png';
+import ui_testing from './icons/ui-testing.png';
+import exp_strategy from './icons/exp-strategy.png';
+import idea_abt from './section_images/idea-abt.png';
+import ideation_banner from './banners/ideation-banner.png';
+import roadmap from './icons/roadmap.png';
+import detailed_icon from './icons/detailed.png';
+import sales_gen from './icons/sales-gen.png';
+import target_aud from './icons/target-aud.png';
+import ppc_banner from './banners/ppc-banner.png';
+import seo_banner from './banners/seo-banner.png';
+import seo_benefits from './section_images/seo-benefits.png';
+import seo_oppertunity from './section_images/seo-oppertunity.png';
+import integration from './icons/integration.png';
+import e_marketing from './banners/e-marketing.png';
 
 export{
     sitelogo,
@@ -119,5 +158,44 @@ export{
     wordpress_banner,
     angular,
     bootstrap,
-    sencha
+    sencha,
+    slider_icon,
+    horse_icon,
+    wallet_icon,
+    blockchain_icon,
+    contract_icon,
+    exchange_icon,
+    hyperledger_icon,
+    graphic_banner,
+    sketching_design,
+    refining_design,
+    graphic_research,
+    brief,
+    process_timeline,
+    logo_design_banner,
+    market_analysis,
+    resource_plan,
+    tec_helps,
+    tec_centric,
+    data_driven,
+    phases,
+    consult,
+    web_mobile,
+    mobile_mock3,
+    wireframing_banner,
+    wireframing_icon,
+    ui_testing,
+    exp_strategy,
+    idea_abt,
+    ideation_banner,
+    detailed_icon,
+    roadmap,
+    ppc_banner,
+    target_aud,
+    sales_gen,
+    seo_banner,
+    seo_oppertunity,
+    seo_benefits,
+    e_marketing,
+    integration,
 };

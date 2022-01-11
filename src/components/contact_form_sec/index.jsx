@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import {
     envelope,
     location,
@@ -9,9 +10,9 @@ import MyContactForm from './contact-form';
 function ContactFormSec(props) {
     return (
         <section className={props.extraClass ? 'contact_sec sec_pad top_padd' : 'contact_sec sec_pad'}>
-            <div className="container">
-                <div className="row mb-5">
-                    <div className="col-lg-12">
+            <Container>
+                <Row className="mb-5">
+                    <Col>
                         <h2 className="sec_hd txt_black">
                             {props.sechd}
                             {props.sechdSpan &&
@@ -20,12 +21,12 @@ function ContactFormSec(props) {
                                 </span>
                             }
                         </h2>
-                    </div>
-                </div>
-            </div>
-            <div className="container full_width">
+                    </Col>
+                </Row>
+            </Container>
+            <Container className="full_width">
                 <div className="row">
-                    <div className="col-lg-4 col-md-12 col-sm-12 align-self-center">
+                    <Col lg={4} md={12} className="align-self-center">
                         <div className="contact_info">
                             <ul>
                                 <li>
@@ -64,14 +65,14 @@ function ContactFormSec(props) {
                                 </li>
                             </ul>
                         </div>
-                    </div>
-                    <div className="col-lg-8 col-md-12 col-sm-12">
+                    </Col>
+                    <Col lg={8} md={12}>
                         <MyContactForm
                             hd="Say Hi"
                         />
-                    </div>
+                    </Col>
                 </div>
-            </div>
+            </Container>
         </section >
     );
 }

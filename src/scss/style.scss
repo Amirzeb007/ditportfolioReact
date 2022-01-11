@@ -70,8 +70,16 @@ body{
     background-color: var(--red);
 }
 
+.bg_light_pink{
+    background-color: var(--light-pink);
+}
+
 .txt_white{
     color: #fff !important;
+}
+
+.bg_white{
+    background-color: #fff !important;
 }
 
 .txt_black{
@@ -93,6 +101,14 @@ body{
     text-align: center;
     cursor: pointer;
     transition: 0.2s all ease-in-out;
+}
+
+.mxwidth_75{
+    max-width: 1320px;
+}
+
+.small_hdv2{
+    font-size: clamp(1.1rem,2vw,1.5rem);
 }
 
 .btn_hover:hover{

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import MyOwlCarousel from '../owlcaro';
 
 function OurClient(props) {
@@ -33,9 +34,9 @@ function OurClient(props) {
     }
     return (
         <section className="our_client_sec">
-            <div className="container">
-                <div className="row mb-5">
-                    <div className="col-lg-12">
+            <Container>
+                <Row className="mb-5">
+                    <Col>
                         <h2 className="sec_hd txt_black">
                             {props.SecHd}
                             {props.SecHdSpan &&
@@ -44,12 +45,12 @@ function OurClient(props) {
                                 </span>
                             }
                         </h2>
-                    </div>
-                </div>
-            </div>
-            <div className="container slider_container">
-                <div className="row">
-                    <div className="col-sm-12">
+                    </Col>
+                </Row>
+            </Container>
+            <Container className="slider_container">
+                <Row>
+                    <Col>
                         <div className="slider_wrapper">
                             <MyOwlCarousel
                                 extraClass={props.classes}
@@ -57,9 +58,9 @@ function OurClient(props) {
                                 items={myCards()}
                             />
                         </div>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
         </section>
     );
 }

@@ -3,142 +3,142 @@ import { sitelogo } from '../../assets/img';
 import { Link } from 'react-router-dom';
 import MyLogo from '../site-logo';
 import Nav from './navigation';
+import { Container } from 'react-bootstrap';
 
 function Header() {
     const topNavigation = [
         {
-            url: '/services',
             txt: 'Services',
-            dropdown1: [
+            dropdown: [
                 {
-                    url: '/', txt: 'Custom Apps',
-                    dropdown2: [
+                    txt: 'Custom Apps',
+                    dropdown: [
                         { url: '/services/mobile-app-development', txt: 'Mobile App Development' },
                         { url: '/services/website-developemnt', txt: 'Website Devevelopment' },
                         { url: '/services/wordpress-development', txt: 'WordPress Development' },
                         { url: '/services/responsive-website-design', txt: 'Responsive Web Design' },
-                        { url: '/', txt: 'Blockchain Development' },
+                        { url: '/services/blockchain-development', txt: 'Blockchain Development' },
                     ]
                 },
                 {
-                    url: '/', txt: 'UI/UX',
-                    dropdown2: [
-                        { url: '/', txt: 'Creative & Intelligent Designs' },
-                        { url: '/', txt: 'Graphics Designing' },
-                        { url: '/', txt: 'Logo Designing' },
-                        { url: '/', txt: 'Web & Mobile' },
-                        { url: '/', txt: 'UI Wireframing' },
-                        { url: '/', txt: 'Ideation Elaboration' },
+                    txt: 'UI/UX',
+                    dropdown: [
+                        { url: '/not-found', txt: 'Creative & Intelligent Designs' },
+                        { url: '/services/graphic-designing', txt: 'Graphics Designing' },
+                        { url: '/services/logo-designing', txt: 'Logo Designing' },
+                        { url: '/services/web-&-mobile', txt: 'Web & Mobile' },
+                        { url: '/services/ui-wireframing', txt: 'UI Wireframing' },
+                        { url: '/services/ideation-elaboration', txt: 'Ideation Elaboration' },
                     ]
                 },
                 {
-                    url: '/', txt: 'Digital Marketing',
-                    dropdown2: [
-                        { url: '/', txt: 'Smart Insights' },
-                        { url: '/', txt: 'PPC' },
-                        { url: '/', txt: 'SEO' },
-                        { url: '/', txt: 'Email Marketing' },
-                        { url: '/', txt: 'Social Media Marketing' },
-                        { url: '/', txt: 'Online Marketing' },
+                    txt: 'Digital Marketing',
+                    dropdown: [
+                        { url: '/not-found', txt: 'Smart Insights' },
+                        { url: '/services/ppc', txt: 'PPC' },
+                        { url: '/services/seo', txt: 'SEO' },
+                        { url: '/services/email-marketing', txt: 'Email Marketing' },
+                        { url: '/not-found', txt: 'Social Media Marketing' },
+                        { url: '/not-found', txt: 'Online Marketing' },
                     ],
                 },
                 {
-                    url: '/', txt: 'Cyber Security',
-                    dropdown2: [
-                        { url: '/', txt: 'We’re Security Aware!' },
-                        { url: '/', txt: 'Data Security' },
-                        { url: '/', txt: 'Website Security' },
-                        { url: '/', txt: 'Network & IT Security' },
-                        { url: '/', txt: 'Cloud Security' },
-                        { url: '/', txt: 'Virus Testing & Solution' },
+                    txt: 'Cyber Security',
+                    dropdown: [
+                        { url: '/not-found', txt: 'We’re Security Aware!' },
+                        { url: '/not-found', txt: 'Data Security' },
+                        { url: '/not-found', txt: 'Website Security' },
+                        { url: '/not-found', txt: 'Network & IT Security' },
+                        { url: '/not-found', txt: 'Cloud Security' },
+                        { url: '/not-found', txt: 'Virus Testing & Solution' },
                     ],
                 },
                 {
-                    url: '/', txt: 'Testing',
-                    dropdown2: [
-                        { url: '/', txt: 'Quality Assurance' },
-                        { url: '/', txt: 'Testing Services' },
-                        { url: '/', txt: 'Performance Testing' },
-                        { url: '/', txt: 'Mobile Testing' },
-                        { url: '/', txt: 'Test Automation' },
-                        { url: '/', txt: 'Software Testing' },
+                    txt: 'Testing',
+                    dropdown: [
+                        { url: '/not-found', txt: 'Quality Assurance' },
+                        { url: '/not-found', txt: 'Testing Services' },
+                        { url: '/not-found', txt: 'Performance Testing' },
+                        { url: '/not-found', txt: 'Mobile Testing' },
+                        { url: '/not-found', txt: 'Test Automation' },
+                        { url: '/not-found', txt: 'Software Testing' },
                     ],
                 }
             ],
         },
         {
-            url: '/technology', txt: 'Technology',
-            dropdown1: [
+            txt: 'Technology',
+            dropdown: [
                 {
-                    url: '/', txt: 'App Development',
-                    dropdown2: [
-                        { url: '/', txt: 'iOS App Development' },
-                        { url: '/', txt: 'Android Development' },
-                        { url: '/', txt: 'HTML5 Development' },
-                        { url: '/', txt: 'React Native App' },
-                        { url: '/', txt: 'Social Media Marketing' },
-                        { url: '/', txt: 'Xamarin Development' },
+                    txt: 'App Development',
+                    dropdown: [
+                        { url: '/not-found', txt: 'iOS App Development' },
+                        { url: '/not-found', txt: 'Android Development' },
+                        { url: '/not-found', txt: 'HTML5 Development' },
+                        { url: '/not-found', txt: 'React Native App' },
+                        { url: '/not-found', txt: 'Social Media Marketing' },
+                        { url: '/not-found', txt: 'Xamarin Development' },
                     ],
                 },
                 {
-                    url: '/', txt: 'Web Development',
-                    dropdown2: [
-                        { url: '/', txt: 'Java/J2EE' },
-                        { url: '/', txt: '.Net' },
-                        { url: '/', txt: 'PHP' },
-                        { url: '/', txt: 'Mean Stack' },
-                        { url: '/', txt: 'Social Media Marketing' },
-                        { url: '/', txt: 'Ruby on Rails' },
+                    txt: 'Web Development',
+                    dropdown: [
+                        { url: '/not-found', txt: 'Java/J2EE' },
+                        { url: '/not-found', txt: '.Net' },
+                        { url: '/not-found', txt: 'PHP' },
+                        { url: '/not-found', txt: 'Mean Stack' },
+                        { url: '/not-found', txt: 'Social Media Marketing' },
+                        { url: '/not-found', txt: 'Ruby on Rails' },
                     ],
                 },
                 {
-                    url: '/', txt: 'Frontend',
-                    dropdown2: [
-                        { url: '/', txt: 'Angular JS' },
-                        { url: '/', txt: 'ReactJS Development' },
-                        { url: '/', txt: 'Bootstrap' },
-                        { url: '/', txt: 'Ember.js' },
-                        { url: '/', txt: 'Knowout.js' },
+                    txt: 'Frontend',
+                    dropdown: [
+                        { url: '/not-found', txt: 'Angular JS' },
+                        { url: '/not-found', txt: 'ReactJS Development' },
+                        { url: '/not-found', txt: 'Bootstrap' },
+                        { url: '/not-found', txt: 'Ember.js' },
+                        { url: '/not-found', txt: 'Knowout.js' },
                     ],
                 },
                 {
-                    url: '/', txt: 'ECM',
-                    dropdown2: [
-                        { url: '/', txt: 'Alfresco' },
-                        { url: '/', txt: 'Liferay' },
-                        { url: '/', txt: 'SharePoint' },
-                        { url: '/', txt: 'Ektron' },
-                        { url: '/', txt: 'WordPress' },
+                    txt: 'ECM',
+                    dropdown: [
+                        { url: '/not-found', txt: 'Alfresco' },
+                        { url: '/not-found', txt: 'Liferay' },
+                        { url: '/not-found', txt: 'SharePoint' },
+                        { url: '/not-found', txt: 'Ektron' },
+                        { url: '/not-found', txt: 'WordPress' },
                     ],
                 },
                 {
-                    url: '/', txt: 'Cloud',
-                    dropdown2: [
-                        { url: '/', txt: 'Amazon Web Services' },
-                        { url: '/', txt: 'Windows Azure' },
-                        { url: '/', txt: 'DevOps' },
-                        { url: '/', txt: 'Google App Services' },
-                        { url: '/', txt: 'Cassandra' },
+                    txt: 'Cloud',
+                    dropdown: [
+                        { url: '/not-found', txt: 'Amazon Web Services' },
+                        { url: '/not-found', txt: 'Windows Azure' },
+                        { url: '/not-found', txt: 'DevOps' },
+                        { url: '/not-found', txt: 'Google App Services' },
+                        { url: '/not-found', txt: 'Cassandra' },
                     ],
                 },
                 {
-                    url: '/', txt: 'Other Services',
-                    dropdown2: [
-                        { url: '/', txt: '3rd Party Integration' },
-                        { url: '/', txt: 'Content Management' },
+                    txt: 'Other Services',
+                    dropdown: [
+                        { url: '/not-found', txt: '3rd Party Integration' },
+                        { url: '/not-found', txt: 'Content Management' },
                     ],
                 },
             ],
         },
         {
-            url: '/insights', txt: 'Insights',
-            dropdown1: [
-                { url: '/', txt: 'Latest Blogs' },
-                { url: '/', txt: 'Infographic' },
-                { url: '/', txt: 'Videos' },
-                { url: '/', txt: 'Case Study' },
-                { url: '/', txt: 'Press Release' },
-                { url: '/', txt: 'Slidesare PPTs' },
+            txt: 'Insights',
+            dropdown: [
+                { url: '/not-found', txt: 'Latest Blogs' },
+                { url: '/not-found', txt: 'Infographic' },
+                { url: '/not-found', txt: 'Videos' },
+                { url: '/not-found', txt: 'Case Study' },
+                { url: '/not-found', txt: 'Press Release' },
+                { url: '/not-found', txt: 'Slidesare PPTs' },
             ],
         },
         { url: '/about', txt: 'About' },
@@ -151,7 +151,7 @@ function Header() {
     return (
         <header>
             <nav className="navbar navbar-expand-lg">
-                <div className="container">
+                <Container>
                     <MyLogo
                         link="/#"
                         myclass="navbar-brand"
@@ -169,7 +169,7 @@ function Header() {
                         />
                         <Link to="/contact-us" className="common_btn btn_hover bg_red txt_white">Contact Us</Link>
                     </div>
-                </div>
+                </Container>
             </nav>
         </header>
     );

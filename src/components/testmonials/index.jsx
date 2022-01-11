@@ -1,4 +1,5 @@
 import React from 'react';
+import { Col, Container, Row } from 'react-bootstrap';
 import MyOwlCarousel from '../owlcaro';
 
 function TestiSec(props) {
@@ -53,9 +54,9 @@ function TestiSec(props) {
     }
     return (
         <section className="testimonial-sec">
-            <div className="container">
-                <div className="row mb-5">
-                    <div className="col-lg-12">
+            <Container>
+                <Row className="mb-5">
+                    <Col>
                         <h2 className="sec_hd txt_black">
                             {props.SecHd}
                             {props.SecHdSpan &&
@@ -64,18 +65,18 @@ function TestiSec(props) {
                                 </span>
                             }
                         </h2>
-                    </div>
-                </div>
-            </div>
+                    </Col>
+                </Row>
+            </Container>
             <div className="testi_wrapper">
-                <div className="row mx-0">
-                    <div className="col-lg-5 col-md-12 col-sm-12">
+                <Row className="mx-0">
+                    <Col lg={5} md={12}>
                         <div className="img_wrapper">
                             <img src={props.colimg} alt="" className="img-fluid" />
                             <img src={props.colimgsm} alt="" className="img-fluid float_img" />
                         </div>
-                    </div>
-                    <div className="col-lg-7 col-md-12 col-sm-12">
+                    </Col>
+                    <Col lg={7} md={12}>
                         <div className="slider_wrapper">
                             <MyOwlCarousel
                                 extraClass={props.classes}
@@ -83,8 +84,8 @@ function TestiSec(props) {
                                 items={myCards()}
                             />
                         </div>
-                    </div>
-                </div>
+                    </Col>
+                </Row>
             </div>
         </section>
     );
